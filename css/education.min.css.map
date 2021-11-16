@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEQ,UAFE,CACN,+BAA+B,CAC3B,cAAc,AAAC,CACX,KAAK,CAAE,gBAAgB,CAAG",
+    "sources": [
+        "../sass/education.sass"
+    ],
+    "names": [],
+    "file": "education.min.css"
+}
