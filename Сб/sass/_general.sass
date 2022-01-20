@@ -1,0 +1,355 @@
+
+.header
+    background: rgba(203,191,180, .2)
+    padding: 20px 0
+    color: #000
+    font-size: 18px
+    text-transform: uppercase
+    margin: 10px 12px
+    border-radius: 15px
+    font-weight: 500
+    &_block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .navigation
+            display: flex
+            align-items: center
+            .logo
+                img
+                    width: 400px
+        .tel
+            color: #000
+            text-decoration: none
+            font-weight: 700
+            transition: .2s all
+            &:hover
+                color:#143A69
+        .adress
+            text-align: center
+            line-height: 22px
+
+.main_block
+    min-height: 66vh
+    background: url('../img/bg_main.jpg') center (center / cover) no-repeat
+    background-attachment: fixed
+    position: relative
+    color: #fff
+    .main_content
+        position: relative
+        padding-top: 120px
+        h1
+            font-size: 60px
+            margin-bottom: 25px
+        span
+            font-size: 26px
+        .btn:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            width: 4em
+            height: 100%
+            background: linear-gradient(to left,rgba(255, 255, 255, 0.3), transparent)
+            transform: translateX(-5em) skewX(-45deg)
+            animation: moveLight 3.5s infinite ease-in-out
+        .main_block_text
+            display: flex
+            align-items: center
+            .btn
+                margin-bottom: 20px
+
+@keyframes moveLight 
+    30%
+        transform: translateX(23em) skewX(-45deg)
+    100%
+        transform: translateX(23em) skewX(-45deg)
+
+.btn
+    display: block
+    box-shadow: none
+    border: none
+    position: relative
+    overflow: hidden
+    color: #fff
+    margin-left: 150px
+    font-size: 15px
+    text-transform: uppercase
+    font-weight: 700
+    background-color: #143A69
+    border-radius: 15px
+    padding: 25px 45px
+    border: 4px solid #EFE9E3
+    transition: .3s all
+    &:hover
+        color: #fff
+        background: #348FC7
+    &:focus
+        box-shadow: none
+
+.title
+    text-align: center
+    font-size: 34px
+    margin-bottom: 50px
+    font-weight: 700
+    &::after, &::before
+        content: ""
+        display: block
+        width: 120px
+        height: 1px
+        margin: 0 auto
+        background-color: #000
+    &::after
+        margin-top: 50px
+    &::before
+        margin-bottom: 40px
+
+.content_block
+    font-weight: 700
+    .title
+        margin-top: 40px
+        &:before
+            display: none
+    .content_desk
+        display: flex
+        flex-direction: column 
+        align-items: center
+        margin-top: 15px
+        img
+            width: 150px
+            height: 150px
+        span
+            margin-top: 20px
+            text-align: center
+            font-size: 18px
+    &_video
+        margin-top: 50px
+        margin-bottom: 20px
+        video
+            width: 100%
+            height: 100%
+
+.clients
+    margin-bottom: 30px
+    .title
+        margin-top: 30px
+    &_logo
+        background: rgba(203,191,180, .2)
+        margin: 10px 12px
+        border-radius: 15px
+        padding: 30px 0
+        .elastislide-list 
+            list-style-type: none
+            display: none
+        .no-js .elastislide-list 
+            display: block
+        .elastislide-carousel ul li 
+            min-width: 20px
+            a 
+                display: inline-block
+                width: 100%
+                img 
+                    padding-right: 20px
+                    display: block
+                    width: 100%
+                    height: 100px
+        .elastislide-wrapper 
+            position: relative
+            margin: 0 auto
+            min-height: 60px
+            &.elastislide-loading 
+                background-image: url(../img/loading.gif)
+                background-repeat: no-repeat
+                background-position: center center
+            nav span 
+                position: absolute
+                background: #000 url(../img/nav.png) no-repeat 4px 3px
+                width: 23px
+                height: 23px
+                border-radius: 50%
+                text-indent: -9000px
+                cursor: pointer
+                opacity: 0.8
+                &:hover 
+                    opacity: 1.0
+        .elastislide-horizontal 
+            padding: 10px 40px
+            ul 
+                white-space: nowrap
+                li 
+                    height: 100%
+                    display: inline-block
+            nav span 
+                top: 50%
+                left: 10px
+                margin-top: -11px
+                &.elastislide-next 
+                    right: 10px
+                    left: auto
+                    background-position: 4px -17px
+        .elastislide-vertical 
+            padding: 40px 10px
+            ul li 
+                display: block
+            nav span 
+                top: 10px
+                left: 50%
+                margin-left: -11px
+                background-position: -17px 5px
+                &.elastislide-next 
+                    bottom: 10px
+                    top: auto
+                    background-position: -17px -18px
+        .elastislide-carousel 
+            overflow: hidden
+            position: relative
+            ul 
+                position: relative
+                display: block
+                list-style-type: none
+                padding: 0
+                margin: 0
+                -webkit-backface-visibility: hidden
+                -webkit-transform: translateX(0px)
+                -moz-transform: translateX(0px)
+                -ms-transform: translateX(0px)
+                -o-transform: translateX(0px)
+                transform: translateX(0px)
+                li 
+                    margin: 0
+                    -webkit-backface-visibility: hidden
+
+.form
+    margin-bottom: 30px
+    .form_wrapper
+        .form_title
+            text-align: center
+            font-size: 42px
+            font-weight: 700
+        .form_title_mob
+            display: none
+        .subtitle
+            font-size: 24px
+            text-align: center
+            margin-top: 20px
+        .form_content
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .form_window
+                width: 60%
+                margin: 0 auto
+                .modal-footer
+                    border-top: none
+                .btn-primary
+                    width: 50%
+                    margin: 0 auto
+                .contacts_user
+                    border: none
+                    background: rgba(203,191,180,0.2)
+                    border-radius: 10px
+            .star
+                display: flex
+                flex-direction: column
+                align-items: center
+                &_text
+                    color: #B0461D
+                    font-weight: bold
+                    text-align: center
+                    width: 300px
+                    text-decoration: none
+
+.footer
+    background: #143A69
+    color: #fff
+    padding: 20px 0
+    font-size: 20px
+    font-weight: 700
+    &_content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        img
+            width: 400px
+        .footer_contact
+            margin-bottom: 20px
+            a
+                display: block
+                color: #fff
+                text-decoration: none
+                transition: .3s all
+                &:hover
+                    color:#fff
+        .data
+            margin-bottom: 10px
+            &:last-child
+                margin-bottom: 0
+
+.confirmation
+    text-align: center
+    font-size: 14px
+    padding: 10px 20px
+    a
+        color: #348FC7
+        text-decoration: none
+        transition: .3s all
+        &:hover
+            color: #000
+
+.modal
+    background-color: rgba(0,0,0, .3)
+    &-content
+        border-radius: 0
+        .modal-header
+            position: relative
+            border-bottom: none
+            flex-direction: column
+            .modal-title
+                margin: 0 auto
+                font-weight: 700
+                font-size: 30px
+                margin-top: 10px
+                text-align: center
+            .modal-subtitle
+                text-align: center
+                margin-top: 10px
+            .btn-close
+                box-shadow: none
+                position: absolute
+                right: 15px
+                top: 15px
+        .modal-body
+            padding: 10px 40px
+        .modal-footer
+            justify-content: center
+            border-top: none
+            padding: 0 40px
+            margin: 10px 0
+
+.contacts_user
+    width: 100%
+    padding: 15px
+    border: 1px solid #c9c9c9
+    border-radius: 5px
+    &::placeholder
+        color: #c9c9c9
+    &:focus
+        outline: none
+
+.btn-primary
+    box-shadow: none
+    color: #fff
+    background-color: #143A69
+    font-weight: 700
+    border: none
+    text-transform: uppercase
+    border-radius: 5px
+    width: 100%
+    padding: 15px
+    margin: 0
+    transition: .3s all
+    &:hover
+        background: #348FC7
+
+
+
