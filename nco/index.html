@@ -16,7 +16,7 @@
 
 
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20220910003558">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220914211556">
 	<link rel="apple-touch-icon" href="img/logo.svg">
 	<link type="image/svg+xml" href="img/logo.svg" rel="icon">
 	<title>Ассоциация развития НКО</title>
@@ -189,273 +189,1175 @@
 								</li>
 							</ul>
 							<form id="tabs-1" action="" class="form">
-								<fieldset>
-									<legend>Опрос</legend>
-									<ul>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 1</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 2</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 3</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<label for="" class="form__label_none">ФИО</label>
-											<input type="text" class="form__field" placeholder="ФИО" />
-										</li>
-										<li>
-											<label for="" class="form__label_none">Электронная почта</label>
-											<input type="text" class="form__field" placeholder="Электронная почта" />
-										</li>
-									</ul>
-									<input type="submit" form="feedback" class="btn btn-form" value="Отправить!" />
-								</fieldset>
-							</form>
+	<fieldset>
+		<legend>Нуждающийся</legend>
+		<ul>
+			<li class="form__radio">
+				<label for="" class="form__question">Какие источники Вы использовали чтобы найти
+					информацию о мерах поддержки? (можно выбрать один или несколько вариантов
+					ответа)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="checkbox" name="internet" value="internet" />
+						<span>Интернет</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="network" value="network" />
+						<span>Соц. сети</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="familyFriends" value="familyFriends" />
+						<span>Семья/Друзья</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="stateOrgans" value="stateOrgans" />
+						<span>Сайты государственных органов</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="institutions" value="institutions" />
+						<span>Государственные учреждения</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="NCOs" value="NCOs" />
+						<span>НКО</span>
+					</label>
+					<textarea type="text" name="yourOption" maxlength="320" placeholder="Впишите свой вариант"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Сложно ли Вам было найти информацию?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy2" value="yes" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy2" value="no" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Используете ли Вы информационные ресурсы в сети
+					Интернет (государственные и негосударственные) для формирования запросов на
+					получения социальной поддержки.</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy3" value="noIdrawUp" />
+						<span>нет, оформляю очно</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy3" value="yesIuseState" />
+						<span>да, использую только официальные государственные ресурсы (например,
+							ГосУслуги)</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy3" value="yesIuse" />
+						<span>да, использую иные информационные ресурсы (например, сайты НКО) </span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Где Вы в последний раз нашли нормативные акты по
+					Вашей проблематике? (можно выбрать один или несколько вариантов ответа)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="checkbox" name="InternetResource" value="InternetResource" />
+						<span>Правовые интернет-ресурсы</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="Website" value="Website" />
+						<span>Сайты профильных государственных органов</span>
+					</label>
+					<textarea type="text" name="other" maxlength="320" placeholder="Иное. Впишите свой вариант"></textarea>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Часто ли Вы используете нормативную документацию в
+					рамках решения Вашей проблемы?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy5" value="yesOften" />
+						<span>Да, часто (каждый месяц)</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy5" value="Rarely" />
+						<span>Редко</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Доверяете ли Вы открытой информации которая
+					публикуется на форумах/сайтах от специалистов/экспертов?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy6" value="YesITrust" />
+						<span>да, доверяю</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy6" value="IAccept" />
+						<span>принимаю к сведению</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy6" value="noITrust" />
+						<span>нет, не доверяю</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Имеется ли у Вас потребность в дополнительных
+					тратах для решения вашей проблемы, помимо получаемой социальной (государственной)
+					поддержки?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy7" value="YesExists" />
+						<span>да, существует</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy7" value="noEverythingIsCovered" />
+						<span>нет, все покрывается</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то искали ли вы возможность возместить
+					эти затраты или найти бесплатную поддержку в негосударственных организациях
+					(НКО)?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy8" value="yes" />
+						<span>Да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy8" value="no" />
+						<span>нет</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy8" value="DidNotThink" />
+						<span>не думал об этом</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Своевременно ли была оказана помощь?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy9" value="Yes1" />
+						<span>Да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy9" value="No2" />
+						<span>Нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если нет, то в чем заключалась проблема? (опишите
+					кратко)</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="yourOption" maxlength="320" placeholder="Впишите свой вариант"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">При заполнении большой (по объему) Заявки на
+					Интернет-ресурсе, вы хотели ли бы иметь возможность в возвращению на предыдущую
+					стадию/шаги с целью повторной проверки данных и/или иной целью?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy11" value="useful" />
+						<span>да, очень полезный инструмент </span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy11" value="notImportant" />
+						<span>нет, мне это не важно</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Прерывали ли вы заполнение сложных и/или больших
+					(по объему) Заявок на Интернет-ресурсах на неопределенное время, ввиду различных
+					причин?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy12" value="YesNoTime" />
+						<span>Да, ввиду отсутствия времени</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy12" value="YesToPrepare" />
+						<span>Да, для подготовки недостающих документов</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy12" value="NoIHighlightTime" />
+						<span>Нет, всегда выделяю достаточно времени для заполнения всех необходимых
+							документов и самой Заявки</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Хотели бы Вы использовать платформу как хранилище
+					для Ваших документов для совместного использования со специалистами НКО для
+					оперативного решения вопросов получения поддержки?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy13" value="YesSimplifyingWork" />
+						<span>да, если это упростит работу и ускорит процесс</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy13" value="NoIPumpIt" />
+						<span>нет, не закачиваю свои документы в сеть</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Опасаетесь и Вы загружать и/или передавать Ваши
+					персональные данные (как минимум: ФИО, Фото, Диагноз и т.д.) на Интернет-ресурсы
+					(государственные и/или негосударственные, например НКО)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy14" value="YesAvoid" />
+						<span>Да, я избегаю ресурсов, в том числе государственных, где просят мои
+							персональные данные</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy14" value="NoITrustState" />
+						<span>Да, но я доверяю только официальным государсвтенных ресурсам</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy14" value="NoISure" />
+						<span>Нет, я уверен в их сохранности</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Считаете ли Вы что персональные данные людей,
+					которым нужна помощь должна быть доступна благотворителям которые прошли процедуру
+					авторизации на платформе?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="needy15" value="Yes1" />
+						<span>да, хочу чтобы персональные данные были доступны только авторизованным
+							пользователям</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="needy15" value="No2" />
+						<span>нет, данные могут видеть все. это повышает вероятность получения
+							помощи</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<label for="" class="form__label_none">ФИО</label>
+				<input type="text" class="form__field" placeholder="ФИО" />
+			</li>
+			<li>
+				<label for="" class="form__label_none">Электронная почта</label>
+				<input type="text" class="form__field" placeholder="Электронная почта" />
+			</li>
+		</ul>
+		<input type="submit" form="feedback" class="btn btn-form" value="Отправить!" />
+	</fieldset>
+</form>
 							<form id="tabs-2" action="" class="form">
-								<fieldset>
-									<legend>Опрос</legend>
-									<ul>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 123</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 123</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 123</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<label for="" class="form__label_none">ФИО</label>
-											<input type="text" class="form__field" placeholder="ФИО" />
-										</li>
-										<li>
-											<label for="" class="form__label_none">Электронная почта</label>
-											<input type="text" class="form__field" placeholder="Электронная почта" />
-										</li>
-									</ul>
-									<input type="submit" form="feedback" class="btn btn-form" value="Отправить!" />
-								</fieldset>
-							</form>
+	<fieldset>
+		<legend>Волонтер</legend>
+		<ul>
+			<li class="form__radio">
+				<label for="" class="form__question">Каким образом вы выбираете, кому вы будете
+					оказывать помощь?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="volunteer" value="IDon'tChoose" />
+						<span>я не выбираю, меня направляют организаторы. Но я бы хотел иметь возможность
+							выбор</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="volunteer" value="IChoose" />
+						<span>я выбираю лично, основываясь на открытой информации соответствующего
+							ресурс</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="volunteer" value="notImportant" />
+						<span>Мне не важен выбор.</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Интересен ли Вам продолжительны личный контакт с
+					нуждающимся (например для отслеживания его дальнейшей состояния и/или
+					судьбы)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="volunteer2" value="yes" />
+						<span>да, было бы здорово</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="volunteer2" value="no" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Хотели бы Вы иметь возможность видеть отчеты НКО о
+					расходовании полученных средств</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="volunteer3" value="yes" />
+						<span>да, это повысит доверие к НКО</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="volunteer3" value="no" />
+						<span>нет, в этом нет необходимости</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<label for="" class="form__label_none">ФИО</label>
+				<input type="text" class="form__field" placeholder="ФИО" />
+			</li>
+			<li>
+				<label for="" class="form__label_none">Электронная почта</label>
+				<input type="text" class="form__field" placeholder="Электронная почта" />
+			</li>
+		</ul>
+		<input type="submit" form="feedback" class="btn btn-form" value="Отправить!" />
+	</fieldset>
+</form>
 							<form id="tabs-3" action="" class="form">
-								<fieldset>
-									<legend>Опрос</legend>
-									<ul>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 111</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 111</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 111</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<label for="" class="form__label_none">ФИО</label>
-											<input type="text" class="form__field" placeholder="ФИО" />
-										</li>
-										<li>
-											<label for="" class="form__label_none">Электронная почта</label>
-											<input type="text" class="form__field" placeholder="Электронная почта" />
-										</li>
-									</ul>
-									<input type="submit" form="feedback" class="btn btn-form" value="Отправить!" />
-								</fieldset>
-							</form>
+	<fieldset>
+		<legend>Благотворитель</legend>
+		<ul>
+			<li class="form__radio">
+				<label for="" class="form__question">Хотели ли бы Вы адресно оказывать помощь
+					нуждающимся?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="philanthropist" value="yes" />
+						<span>Да, я хотел(-а) бы видеть кому я помогаю</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="philanthropist" value="no" />
+						<span>Нет, я доверяю НКО в распределении средств</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Хотели ли бы Вы отслеживать результаты вашей
+					помощи (отслеживать нуждающегося)?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="philanthropist2" value="yes" />
+						<span>Да, я бы хотел(-а) участвовать в решении проблемы (Открыто), возможно в
+							процессе потребуется иная помощь, которую бы я смог(-а) бы оказать.</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="philanthropist2" value="yes" />
+						<span>Да, я бы хотел(-а) участвовать в решении проблемы (Инкогнито), возможно в
+							процессе потребуется иная помощь, которую бы я смог(-а) бы оказать.</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="philanthropist2" value="no" />
+						<span>Нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Хотели ли бы Вы отслеживать результаты вашей
+					помощи (получать отчетные финансовые документы)?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="philanthropist3" value="yes" />
+						<span>Да, для меня важно видеть целевое расходование средств/ресурсов</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="philanthropist3" value="no" />
+						<span>Нет, я доверяю НКО вопрос распределения пожертвованных
+							средств/ресурсов</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Нужен ли на платформе функционал, который позволит
+					благотворителю оставаться анонимным?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="philanthropist4" value="yes" />
+						<span>да, нужен</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="philanthropist4" value="no" />
+						<span>нет, не нужен</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<label for="" class="form__label_none">ФИО</label>
+				<input type="text" class="form__field" placeholder="ФИО" />
+			</li>
+			<li>
+				<label for="" class="form__label_none">Электронная почта</label>
+				<input type="text" class="form__field" placeholder="Электронная почта" />
+			</li>
+		</ul>
+		<input type="submit" form="feedback" class="btn btn-form" value="Отправить!" />
+	</fieldset>
+</form>
 							<form id="tabs-4" action="" class="form">
-								<fieldset>
-									<legend>Опрос</legend>
-									<ul>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 555</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 555</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li class="form__radio">
-											<label for="" class="form__question">Вопрос 555</label>
-											<div class="form__wrapper">
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-												<label class="form__answer">
-													<input type="radio" name="answer" value="answer" />
-													<span>Ответ ответ ответ</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<label for="" class="form__label_none">ФИО</label>
-											<input type="text" class="form__field" placeholder="ФИО" />
-										</li>
-										<li>
-											<label for="" class="form__label_none">Электронная почта</label>
-											<input type="text" class="form__field" placeholder="Электронная почта" />
-										</li>
-									</ul>
-									<input type="submit" form="feedback" class="btn btn-form" value="Отправить!" />
-								</fieldset>
-							</form>
+	<fieldset>
+		<legend>Представитель НКО</legend>
+		<ul>
+			<li class="form__radio">
+				<label for="" class="form__question">Как вы сейчас осуществляете свою
+					деятельность?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative" value="Есть свой информационный сайт" />
+						<span>Есть свой информационный сайт</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative"
+							value="Есть свой сайт с расширенным функционалом и сервисами" />
+						<span>Есть свой сайт с расширенным функционалом и сервисами</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative" value="Работаем только офф-лайн" />
+						<span>Работаем только офф-лайн</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Есть ли у вас собственный интернет ресурс?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative2" value="Сайт" />
+						<span>Сайт</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative2" value="Сайт и развитые социальные сети" />
+						<span>Сайт и развитые социальные сети</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative2" value="нет" />
+						<span>нет</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative2" value="только социальные сети" />
+						<span>только социальные сети</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то какую роль он играет в осуществлении
+					вашей деятельности?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative3" value="большинство клиентов приходят с Сайта" />
+						<span>большинство клиентов приходят с Сайта </span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative3" value="Большинство клиентов приходят с Социальных сетей" />
+						<span>Большинство клиентов приходят с Социальных сетей</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative3" value="клиенты приходят и с Сайта и из Социальных сетей" />
+						<span>клиенты приходят и с Сайта и из Социальных сетей</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative3"
+							value="вторичную, больше как информационный ресурс с новостями и описанием нашего НКО" />
+						<span>вторичную, больше как информационный ресурс с новостями и описанием нашего
+							НКО</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Какие инструменты присутствуют на вашем
+					ресурсе?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="yourOption" maxlength="320" placeholder="Впишите свой вариант"></textarea>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если нет, то считаете ли вы целесообразным иметь
+					площадку в сети интернет для осуществления своей деятельности?
+				</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative4" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative4" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Как люди узнают о вас?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative5" value="Интернет ресурсы (сайт, социальные сети)" />
+						<span>Интернет ресурсы (сайт, социальные сети)</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative5" value="медицинские учреждения" />
+						<span>медицинские учреждения</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative5" value="Сарафанное радио (знакомые/друзья/семья и т.д.)" />
+						<span>Сарафанное радио (знакомые/друзья/семья и т.д.)</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Как вы думаете, легко ли им узнать о вас?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative6" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative6" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Как вы думаете, в настоящее время достаточная ли
+					информированность у населения о социальных центрах и их деятельности?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative7" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative7" value="нет" />
+						<span>нет</span>
+					</label>
+					<textarea type="text" name="Other" maxlength="320" placeholder="Другое"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Как в вашем центре происходит информирование
+					потребителей о порядке получения необходимой им услуги?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative8" value="Через сайт и рекламу в Интернете" />
+						<span>Через сайт и рекламу в Интернете</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative8" value="Через сайт и мобильное приложение" />
+						<span>Через сайт и мобильное приложение</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative8" value="Раздаточный материал (брошюры/инструкции)" />
+						<span>Раздаточный материал (брошюры/инструкции)</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative8" value="Наружная реклама/билборды" />
+						<span>Наружная реклама/билборды </span>
+					</label>
+					<textarea type="text" name="Other" maxlength="320" placeholder="Другое"></textarea>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Существуют ли какие-нибудь трудности в этом
+					процессе?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative9" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative9" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то какие?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Если нет, то приходится ли потребителю обращаться
+					в центр более одного раза в процессе получения необходимой им услуги?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative11" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative11" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то часто ли клиенты обращаются в центр в
+					процессе оформления/регистрации услуги?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative12"
+							value="не более 2-3 раз необходимо присутствие в центре" />
+						<span>не более 2-3 раз необходимо присутствие в центре</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative12"
+							value="более 3-х раз необходимо присутствовать в центре" />
+						<span>более 3-х раз необходимо присутствовать в центре</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative12"
+							value="более 7-ми раз необходимо присутствовать в центре" />
+						<span>более 7-ми раз необходимо присутствовать в центре</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative12" value="более 10-ти раз необходимо присутствие" />
+						<span>более 10-ти раз необходимо присутствие </span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">В каких случаях это происходит?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Используете ли Вы услуги рекламы в сети
+					Интернет?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative14" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative14" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Какие трудности у них могут возникнуть в процессе
+					поиска нужного НКО?(можно выбрать один или несколько вариантов ответа)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="checkbox" name="LackOfGeneralInformation" value="Отсутствие общей информации/централизованного источника/карты существующих
+							НКО с их Контактами" />
+						<span>Отсутствие общей информации/централизованного источника/карты существующих
+							НКО с их Контактами</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="LackOfDigitalTools" value="Отсутствие цифровых инструментов у НКО, для информирования граждан об их
+						услугах" />
+						<span>Отсутствие цифровых инструментов у НКО, для информирования граждан об их
+							услугах</span>
+					</label>
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Изменяется ли количество людей, обращающихся к вам
+					за помощью (например, в этом году по сравнению с предыдущим)?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative16" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative16" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то в какую сторону
+					(рост/снижение)?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative17" value="Наблюдается РОСТ количества обращений граждан" />
+						<span>Наблюдается РОСТ количества обращений граждан</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative17"
+							value="Наблюдается СНИЖЕНИЕ количества обращений граждан" />
+						<span>Наблюдается СНИЖЕНИЕ количества обращений граждан</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">С чем вы это связываете?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Изменяется ли число нуждающихся с каждым годом
+					(например, в этом по сравнению с предыдущим)?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative19" value="Да, наблюдается РОСТ количества граждан" />
+						<span>Да, наблюдается РОСТ количества граждан</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative19" value="Да, наблюдается СНИЖЕНИЕ количества граждан" />
+						<span>Да, наблюдается СНИЖЕНИЕ количества граждан</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative19"
+							value="Нет, примерно сохраняется годовая оценка количества граждан" />
+						<span>Нет, примерно сохраняется годовая оценка количества граждан</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">С (чем) (какими причинами) вы связываете данные
+					изменения?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Своевременно ли была оказана помощь
+					нуждающемуся?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative21" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative21" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">если нет, то в чем заключалась проблема? (опишите
+					кратко)</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="YourQuestion" maxlength="320" placeholder="Впишите свой вариант"></textarea>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">По каким причинам увеличивается время ожидания
+					помощи? (можно выбрать один или несколько вариантов ответа)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="checkbox" name="Operating" value="операционные проблемы (внутренние)" />
+						<span>операционные проблемы (внутренние)</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="bureaucratic"
+							value="бюрократические проблемы (взаимодействие с гос. органами)" />
+						<span>бюрократические проблемы (взаимодействие с гос. органами)</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="Integration"
+							value="интеграционные проблемы (взаимодействие с другими центрами и/или иными организациями в процессе реализации помощи)" />
+						<span>интеграционные проблемы (взаимодействие с другими центрами и/или иными
+							организациями в процессе реализации помощи)</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Как вы боретесь с возникающими проблемами? (можно
+					выбрать один или несколько вариантов ответа)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="checkbox" name="Introduce" value="внедряем внутренние системы документооборота" />
+						<span>внедряем внутренние системы документооборота</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="Introduce2"
+							value="внедряем внутренние системы рассмотрения и ведения заявки/запроса от нуждающихся" />
+						<span>внедряем внутренние системы рассмотрения и ведения заявки/запроса от
+							нуждающихся</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="Nastraivaem"
+							value="настраиваем частные партнерские модели и условия взаимодействия с государственными органами и/или иными организациями" />
+						<span>настраиваем частные партнерские модели и условия взаимодействия с
+							государственными органами и/или иными организациями</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="noIntroduce"
+							value="Не ведем работы по сокращению времени предоставления помощи" />
+						<span>Не ведем работы по сокращению времени предоставления помощи</span>
+					</label>
+					<textarea type="text" name="Other" maxlength="320" placeholder="Другое"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Как происходит привлечение новых благотворителей
+					(волонтёров)? (можно выбрать один или несколько вариантов ответа)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="checkbox" name="ownResources"
+							value="через собственные информационные ресурсы (сайт, мобильное приложение)" />
+						<span>через собственные информационные ресурсы (сайт, мобильное
+							приложение)</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="PagesNetworks"
+							value="через странички Общества в социальных сетях (ВКонтакте, Телеграмм, Одноклассники и другие)" />
+						<span>через странички Общества в социальных сетях (ВКонтакте, Телеграмм,
+							Одноклассники и другие)</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="AdvertisingAndMedia" value="Реклама и СМИ" />
+						<span>Реклама и СМИ</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="communications" value="Личные коммуникации" />
+						<span>Личные коммуникации</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="ProfileForums" value="Профильные Форумы/конференции" />
+						<span>Профильные Форумы/конференции</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Что вам мешает привлекать больше новых
+					благотворителей (волонтёров)? (можно выбрать один или несколько вариантов
+					ответа)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="checkbox" name="notKnow"
+							value="не знаем, как донести информацию о себе большому кругу людей" />
+						<span>не знаем, как донести информацию о себе большому кругу людей</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="complexity"
+							value="сложность координации большого количества волонтеров " />
+						<span>сложность координации большого количества волонтеров </span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="LackOfTrust"
+							value="отсутствие доверия со стороны благотворителей (волонтеров) к НКО" />
+						<span>отсутствие доверия со стороны благотворителей (волонтеров) к НКО</span>
+					</label>
+					<textarea type="text" name="Other" maxlength="320" placeholder="Другое"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Есть ли изменение в числе благотворителей
+					(волонтёров) с каждым годом (например, в этом по сравнению с предыдущим)?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative27" value="Да, наблюдается РОСТ количества волонтёров" />
+						<span>Да, наблюдается РОСТ количества волонтёров</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative27" value="Да, наблюдается СНИЖЕНИЕ количества волонтёров" />
+						<span>Да, наблюдается СНИЖЕНИЕ количества волонтёров</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative27"
+							value="Нет, примерно сохраняется годовая оценка количества волонтёров" />
+						<span>Нет, примерно сохраняется годовая оценка количества волонтёров</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">С чем вы это связываете?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Как вы пытаетесь их улучшить состояние данного
+					вопроса?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Есть ли у вас собственные (индивидуальные)
+					информационные инструменты, которые вы используете в работе?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative30" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative30" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Если да, то какие? (можно выбрать один или
+					несколько вариантов ответа)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="checkbox" name="Place2" value="Сайт" />
+						<span>Сайт</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="MobileApp2" value="Мобильное приложение" />
+						<span>Мобильное приложение</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="Networks3" value="Странички в социальных сетях" />
+						<span>Странички в социальных сетях</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="SystemManagement"
+							value="система ведения и контроля обращений граждан в ваш центр" />
+						<span>система ведения и контроля обращений граждан в ваш центр</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="Documentation"
+							value="система электронного документооборота в организации" />
+						<span>система электронного документооборота в организации</span>
+					</label>
+					<textarea type="text" name="Other" maxlength="320" placeholder="Другое"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Испытываете ли вы проблемы с
+					финансированием?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative32" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative32" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Каковы причины перебоев в финансировании?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">(Есть ли) (какие) последствия?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Как вы пытаетесь (это) (их) предотвратить?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Как сейчас происходит ваше взаимодействие с
+					органами власти? (можно выбрать один или несколько вариантов ответа)</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="checkbox" name="DigitalStateTools" value="Через цифровые государственные инструменты" />
+						<span>Через цифровые государственные инструменты</span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="visitState" value="через непосредственное посещение гос.органов " />
+						<span>через непосредственное посещение гос.органов </span>
+					</label>
+					<label class="form__answer">
+						<input type="checkbox" name="postOffice" value="через письма и почту" />
+						<span>через письма и почту</span>
+					</label>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Есть ли трудности?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative37" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative37" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то какие?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Испытываете ли вы кадровые трудности?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative39" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative39" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то с чем вы их связываете?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Как вы пытаетесь их преодолеть?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Испытываете ли вы трудности, связанные с
+					инфраструктурой?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative42" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative42" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то какие?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Как вы пытаетесь их преодолеть?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Есть ли у вас представительство в
+					регионах?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative45" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative45" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то в каких (в скольких)?</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="OpenQuestion" maxlength="320" placeholder="Открытый вопрос"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Сложно ли было вам зарегистрировать НКО?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative47" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative47" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то опишите возникшие в процессе
+					сложности</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="yourOption" maxlength="320" placeholder="Впишите свой вариант"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Был ли сложен процесс оформления документов для
+					получения госфинансирования?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative49" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative49" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то опишите возникшие в процессе
+					сложности</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="yourOption" maxlength="320" placeholder="Впишите свой вариант"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">является ли сложным (трудоемким) процесс
+					отчетности перед государством по полученным бюджетным средствам?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative51" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative51" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class="form__radio">
+				<label for="" class="form__question">Если да, то опишите возникшие в процессе
+					сложности</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="yourOption" maxlength="320" placeholder="Впишите свой вариант"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Сталкивались ли вы с необходимостью совместной
+					работы (взаимодействию) с другим НКО для решения курируемой вами проблемы?</label>
+				<div class="form__wrapper">
+					<label class="form__answer">
+						<input type="radio" name="representative52" value="да" />
+						<span>да</span>
+					</label>
+					<label class="form__answer">
+						<input type="radio" name="representative52" value="нет" />
+						<span>нет</span>
+					</label>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Если да, то опишите возникшие в процессе
+					сложности</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="yourOption" maxlength="320" placeholder="Впишите свой вариант"></textarea>
+				</div>
+			</li>
+			<li class=" form__radio">
+				<label for="" class="form__question">Если да, то опишите положительные стороны данного
+					подхода</label>
+				<div class="form__wrapper">
+					<textarea type="text" name="yourOption" maxlength="320" placeholder="Впишите свой вариант"></textarea>
+				</div>
+			</li>
+			<li>
+				<label for="" class=" form__label_none">ФИО</label>
+				<input type="text" class="form__field" placeholder="ФИО" />
+			</li>
+			<li>
+				<label for="" class="form__label_none">Электронная почта</label>
+				<input type="text" class="form__field" placeholder="Электронная почта" />
+			</li>
+		</ul>
+		<input type="submit" form="feedback" class="btn btn-form" value="Отправить!" />
+	</fieldset>
+</form>
 						</div>
 					</div>
 				</div>
@@ -522,7 +1424,8 @@
 											</li>
 											<li>
 												<label for="text">Введите текст обращения</label>
-												<textarea type="text" name="text" placeholder="Введите текст обращения"></textarea>
+												<textarea type="text" name="text" maxlength="320"
+													placeholder="Введите текст обращения"></textarea>
 											</li>
 										</ul>
 										<input type="submit" form="feedback" class="btn btn-form" value="Отправить!" />
@@ -571,8 +1474,8 @@
 	</div>
 </footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20220910003558"></script>
-	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20220910003558"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20220914211556"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20220914211556"></script>
 	<script>
 		$(function () {
 			$("#tabs").tabs();
@@ -583,7 +1486,7 @@
 			$("#phone").mask("+7(999) 999-9999");
 		});
 	</script>
-	<script src="js/app.min.js?_v=20220910003558"></script>
+	<script src="js/app.min.js?_v=20220914211556"></script>
 </body>
 
 </html>
