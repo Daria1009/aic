@@ -1,0 +1,304 @@
+body {
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+}
+input,
+textarea,
+button {
+	font-family: inherit;
+	font-weight: inherit;
+}
+a {
+	color: inherit;
+}
+/* ---------------------------------- */
+.main {
+	margin-top: 110px;
+}
+section {
+	margin: -110px 0 0 0;
+}
+[class*="__title"] {
+	margin-bottom: 10px;
+	font-family: "Montserrat-bold";
+	@include adaptivValue("font-size", 32, 20, 1);
+	line-height: 1.21875;
+	position: relative;
+	span {
+		font-family: "Montserrat-extrabold";
+	}
+}
+[class*="__text"] {
+	font-family: "Montserrat";
+	@include adaptivValue("font-size", 20, 16, 1);
+	line-height: 1.2;
+	span {
+		font-family: "Montserrat-bold";
+	}
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/* ---------------------------------- */
+.title_mb {
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+}
+.line {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 60vw;
+	height: 9px;
+	background: $lg;
+}
+.btn-form {
+	margin-top: 20px;
+	padding: 20px 60px;
+	width: max-content;
+	float: right;
+	font-family: "Montserrat-extrabold";
+	@include adaptivValue("font-size", 24, 16, 1);
+	line-height: 1.2;
+	background: linear-gradient(265.44deg, #F17B53 15.81%, #FFD57D 53.69%);
+	border-radius: 39px;
+	text-align: center;
+	transition: all .3s;
+}
+.btn-tabs {
+	position: relative;
+	display: block;
+	padding: 15px 50px;
+	background: linear-gradient(267.31deg, #F17B53 7.97%, #FFD57D 87.35%);
+	font-family: "Montserrat-bold";
+	transition: all .3s;
+
+	// &:focus {
+
+	// }
+}
+/* ---------------------------------- */
+input,
+textarea {
+	padding: 24px 53px;
+	border-radius: 21px;
+	background: #F7F7F7;
+	font-family: "Montserrat-med";
+	font-size: 1rem;
+	&::placeholder {
+		color: #000;
+		font-size: 1rem;
+	}
+}
+textarea {
+	width: 100%;
+	resize: vertical;
+	min-height: 120px;
+	max-height: 250px;
+}
+input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-inner-spin-button {
+	display: none;
+}
+/* ---------------------------------- */
+.reproduction {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__content {
+		flex: 0 1 60%;
+	}
+}
+/* ---------------------------------- */
+.form {
+	li {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	label {
+		font-family: "Montserrat-med";
+	}
+	&__label_none {
+		font-size: 0;
+	}
+	&__radio {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		row-gap: 15px;
+	}
+	&__wrapper {
+		margin: 10px 0px 0px 80px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		input:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+	&__question {
+		background-color: #F7F7F7;
+		border-radius: 21px;
+		padding: 24px 40px;
+		font-size: 1rem;
+		line-height: 1.2;
+	}
+	&__field {
+		width: 100%;
+	}
+	&__answer {
+		font-size: 1rem;
+		display: flex;
+		align-items: center;
+		&>input {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
+		&>span {
+			display: inline-flex;
+			align-items: center;
+			user-select: none;
+			line-height: 1.2;
+		}
+		/* создание в label псевдоэлемента  before со следующими стилями */
+		&>span::before {
+			content: '';
+			display: inline-block;
+			width: 1.4em;
+			height: 1.4em;
+			flex-shrink: 0;
+			flex-grow: 0;
+			background-color: #F7F7F7; 
+			border: 1px solid #adb5bd;
+			border-radius: 7px;
+			margin-right: 1em;
+			background-repeat: no-repeat;
+			background-position: center center;
+			// background-size: 50% 50%;
+		}
+		/* стили при наведении курсора на радио */
+		&>input:not(:disabled):not(:checked)+span:hover::before {
+			border-color: #F17B53;
+		}
+		/* стили для активной радиокнопки (при нажатии на неё) */
+		&>input:not(:disabled):active+span::before {
+			background-color: #F17B53;
+			border-color: #F17B53;
+		}
+		/* стили для радиокнопки, находящейся в фокусе */
+		&>input:focus+span::before {
+			box-shadow: none;
+		}
+		/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+		&>input:focus:not(:checked)+span::before {
+			border-color: #F17B53;
+		}
+		/* стили для радиокнопки, находящейся в состоянии checked */
+		&>input:checked+span::before {
+			border-color: #F17B53;
+			background-color: #F17B53;
+			// background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+		}
+		/* стили для радиокнопки, находящейся в состоянии disabled */
+		&>input:disabled+span::before {
+			background-color: #e9ecef;
+		}
+	}
+	textarea {
+		min-height: 70px;
+		max-height: 100px;
+		border: 1px solid #F17B53;
+		padding: 20px 25px;
+		&:focus,
+		&:focus-visible {
+			border: 2px solid #F17B53;
+			outline: none;
+		}
+	}
+}
+/* ---------------------------------- */
+.agreement {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+	text-align: center;
+}
+/* ---------------------------------- */
+@media (min-width: em(1090)) {
+	.header {
+		&__icon {
+			transition: all .3s;
+			&:hover img{
+				filter: invert(55%) sepia(88%) saturate(309%) hue-rotate(336deg) brightness(104%) contrast(98%);
+			}
+		}
+	}
+	.menu {
+		a:hover {
+			color: #fff;
+		}
+	}
+	.burger {
+		&:hover {
+			&::after,
+			&::before {
+				background-color: #000;
+			}
+		}
+	}
+	.btn-tabs:hover,
+	.btn-form:hover {
+		color: #fff;
+	}
+	.footer__menu,
+	.footer__social,
+	.footer__developer {
+		a:hover {
+			color: #FD985F;
+		}
+	}
+}
+/* ---------------------------------- */
+@media (max-width: em(991.98)) {
+	.reproduction {
+		flex-direction: column;
+		row-gap: 30px;
+		&__content {
+			flex: 0 1 auto;
+			margin-right: 0;
+		}
+	}
+	.line {
+		width: 100vw;
+	}
+	[class*="__image"] {
+		flex: 0 1 auto;
+	}
+}
+@media (max-width: em(600)) {
+	.form {
+		&__wrapper {
+			margin-left: 15px;
+		}
+		&__question,
+		&__field {
+			padding: 15px 20px;
+		}
+	}
+	section {
+		margin: -90px 0 0 0;
+	}
+	textarea {
+		padding: 15px 20px;
+	}
+}
+@media (max-width: em(479.98)) {
+	.feedback__form input.btn-form,
+	.btn-form {
+		width: 100%;
+	}
+}

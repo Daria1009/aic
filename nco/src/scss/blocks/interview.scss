@@ -1,0 +1,60 @@
+.interview {
+	padding-top: (110px + 56px);
+	&__header {
+		@include adaptivValue("padding", 50, 30, 1);
+		text-align: center;
+		width: 100%;
+		background: linear-gradient(265.44deg, #F17B53 15.81%, #FFD57D 53.69%);
+		border-radius: 27px;
+		font-family: "Montserrat-extrabold";
+		@include adaptivValue("font-size", 32, 20, 1);
+		line-height: 1.21875;
+	}
+	&__title {
+		margin-bottom: 0;
+	}
+	&__content {
+		max-width: 1200px;
+		margin: 30px auto 0;
+		li[aria-selected=true] .btn-tabs{
+			color: #fff;
+			border-radius: 20px;
+		}
+	}
+	&__tabs {
+		margin-bottom: 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 25px;
+		row-gap: 15px;
+		flex-wrap: wrap;
+	}
+	legend {
+		font-size: 0;
+	}
+}
+
+@media (max-width: em(991.98)) {
+	.interview {
+		&__tabs {
+			justify-content: flex-start;
+		}
+	}
+}
+@media (max-width: em(600)) {
+	.interview {
+		padding-top: (90px + 56px);
+		&__tabs {
+			flex-direction: column;
+			margin-bottom: 20px;
+			li {
+				width: 85%;
+				text-align: center;
+			}
+		}
+	}
+	.btn-form {
+		padding: 15px 40px;
+	}
+}
