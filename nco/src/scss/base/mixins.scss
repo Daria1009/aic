@@ -1,0 +1,36 @@
+// TO %
+@function prc($pxOne, $pxTwo) {
+	$result: math.div($pxOne, $pxTwo) * 100%;
+	@return $result;
+}
+// REM
+@function rem($px) {
+	$result: math.div($px, 16) + rem;
+	@return $result;
+}
+// EM
+@function em($px) {
+	$result: math.div($px, $mainSize) + em;
+	@return $result;
+}
+
+// @include adaptivValue("padding", 50, 20, 0); - вызов
+@mixin adaptivValue ($property, $startSize, $minSize, $type){
+	$addSize: $startSize - $minSize;
+	@if $type == 1 {
+		// Только если меньше контейнера
+		#{$property}: $startSize + px;
+		@media (max-width: #{$maxWidhtContainer + px}) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidhtContainer - 320}));
+		}
+	} @else if $type == 2 {
+		// Только если больше контейнера
+		#{$property}: $startSize + px;
+		@media (min-width: #{$maxWidhtContainer + px}) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidht - 320}));
+		}
+	} @else {
+		// Всегда
+		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidht - 320}));
+	}
+}

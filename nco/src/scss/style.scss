@@ -1,0 +1,104 @@
+@use 'sass:math';
+
+@import "base/variables";
+@import "base/mixins";
+
+@import "fonts";
+
+// Обнуление и общие параметры
+@import "base/null";
+
+// Шрифт по умолчанию =====================================================================================================================
+$fontFamily: "Montserrat";
+$fontWeight: 400;
+
+// Задавать одно число для этих переменных
+$fontSize: rem(16);
+$mainSize: 16;
+
+// Основные цвета
+$mainColor: #0000;
+$lg: linear-gradient(265.44deg, #F17B53 15.81%, #FED67B 53.69%);
+
+// Настройки ==============================================================================================================================
+// Минимальная ширина страницы
+$minWidht: 320;
+// Максимальная ширина страницы
+$maxWidht: 1920;
+// Ширина ограничеваюшего контейнера (0 = нет ограничения)
+$maxWidhtContainer: 1300;
+// Общий отступ у контейнера
+// (30 = 15px слева и справа, 0 = нет отступа)
+$containerPadding: 30;
+
+// Тип адаптива:
+// 1 = отзывчивость (у контейнера нет брейк-поинтов),
+// 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
+$responsiveType: 1;
+
+// Ширина срабатывания первого брейк-поинта
+$containerWidht: $maxWidhtContainer + $containerPadding;
+
+// Брейк-поинты
+$pc: em($containerWidht); // ПК, ноутбуки, некоторые паншеты в горизонтальном положении
+$tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: em(767.98); // Телефоны L
+$mobileSmall: em(479.98); // Телефоны S
+
+// Ограничивающий контейнер =====================================================================================================================
+
+/* Снипет (HTML): cnt */
+
+@if ($responsiveType == 1) {
+	// Отзывчивая
+	[class*="__container"] {
+		@if ($maxWidhtContainer > 0) {
+			max-width: rem($maxWidhtContainer);
+			box-sizing: content-box;
+			margin: 0 auto;
+		}
+		@if ($containerPadding > 0) {
+			padding: 0 rem(math.div($containerPadding, 2));
+		}
+	}
+} @else {
+	// По брейк-поинтам
+	[class*="__container"] {
+		margin: 0 auto;
+		@if ($maxWidhtContainer > 0) {
+			max-width: rem($maxWidhtContainer);
+			box-sizing: content-box;
+		} @else {
+			@if ($containerPadding > 0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			}
+		}
+		@media (max-width: $pc) {
+			max-width: rem(970);
+		}
+		@media (max-width: $tablet) {
+			max-width: rem(750);
+		}
+		@media (max-width: $mobile) {
+			max-width: none;
+			@if ($containerPadding > 0 and $maxWidhtContainer > 0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			}
+		}
+	}
+}
+
+@import "base/main";
+
+// @import 'blocks/...';
+@import 'blocks/header';
+@import 'blocks/project';
+@import 'blocks/goal';
+@import 'blocks/platform';
+@import 'blocks/roles';
+@import 'blocks/interview';
+@import 'blocks/event';
+@import 'blocks/feedback';
+@import 'blocks/footer';
+
+// @import "base/media";
