@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20220921214713" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220922231627" />
 
-  <link rel="icon" href="img/icons/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" type="img/icons/favicon.png" />
-  <title>О пространстве</title>
+	<link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+	<link rel="icon" type="img/favicon.ico" />
+	<title>О пространстве</title>
 </head>
-
 
 <body>
 	<div class="wrapper">
@@ -220,9 +219,10 @@
 </section>
 		</main>
 		<footer id="footer" class="footer">
-	<div class="footer__container">
-		<div class="footer__wrapper">
-			<div class="footer__content">
+	<!-- <div class="footer__container"> -->
+	<div class="footer__wrapper">
+		<div class="footer__content">
+			<div class="footer__adap">
 				<a href="index.html" class="footer__logo" aria-label="Вернуться на главную страницу">
 					<img src="img/logo.svg" alt="Логотип Среды" />
 				</a>
@@ -271,25 +271,27 @@
 					<a href="#" class="footer__contact link">Политика конфиденциальности</a>
 				</div>
 			</div>
-			<div class="footer__map">
-				<div class="footer__background"></div>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31905.34026050949!2d30.318891!3d60.013685800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963466c4ece7c7%3A0x486df36a418b33f4!2z0JHQu9C-0YjQuNC90YvQuSDRgNGL0L3QvtC6!5e0!3m2!1sru!2sru!4v1663595152835!5m2!1sru!2sru"
-					style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
+		</div>
+		<div class="footer__map">
+			<div class="footer__background"></div>
+			<div id="map" class="footer__maps"></div>
 		</div>
 	</div>
+	<!-- </div> -->
 </footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20220921214713"></script>
-	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20220921214713"></script>
-	<script>
-		$(function () {
-			$(".tabs").tabs();
-		});
-	</script>
-	<script src="js/modules/flsWebp.js?_v=20220921214713"></script>
-	<script src="js/components/menu.js?_v=20220921214713"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20220922231627"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20220922231627"></script>
+<script>
+	$(function () {
+		$(".tabs").tabs();
+	});
+</script>
+<script src="js/modules/flsWebp.js?_v=20220922231627"></script>
+<script src="js/components/menu.js?_v=20220922231627"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9976209f-3d25-429c-b530-40eb2400824d&_v=20220922231627"
+	type="text/javascript"></script>
+<script src="js/components/placemark.js?_v=20220922231627" type="text/javascript"></script>
 </body>
 
 </html>
