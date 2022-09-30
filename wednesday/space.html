@@ -4,7 +4,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20220923075034" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20220930064934">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220930064934" />
 
 	<link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
 	<link rel="icon" type="img/favicon.ico" />
@@ -49,22 +50,28 @@
 						</ul>
 					</nav>
 					<div class="line"></div>
-					<div class="header__search textInput">
-						<input type="text" placeholder="введите запрос" />
-					</div>
+					<form action="" class="header__search textInput">
+						<legend class="textInput__subtitle">Поиск</legend>
+						<ul class="form__list">
+							<li class="form__item">
+								<input type="text" class="search" placeholder="введите запрос" />
+								<input type="submit" form="form" class="search-btn" value="">
+							</li>
+						</ul>
+					</form>
 				</div>
 				<div class="header__footer">
 					<div class="header__btns">
-						<a href="#" class="btn" aria-label="Зарегистрироваться">Зарегистрироваться</a>
-						<a href="#" class="btn" aria-label="Войти">Войти</a>
+						<a href="#register" class="btn" aria-label="Зарегистрироваться" data-fancybox>Зарегистрироваться</a>
+						<a href="#come-in" class="btn" aria-label="Войти" data-fancybox>Войти</a>
 					</div>
 					<article class="tags">
 						<h4 class="tags__title">#времяменяться</h4>
 						<div class="tags__icons">
-							<a href="#" aria-label="Вк">
+							<a href="https://vk.com/spb_sreda" aria-label="Вк">
 								<img src="img/icons/vk.svg" alt="Вк" />
 							</a>
-							<a href="#" aria-label="Телеграм">
+							<a href="https://t.me/SreDA_space" aria-label="Телеграм">
 								<img src="img/icons/telegram.svg" alt="Телеграм" />
 							</a>
 						</div>
@@ -89,107 +96,32 @@
 					</ul>
 				</div>
 				<div id="tabs-1" class="tabs__text">
-					<div class="tabs__img">
-						<img src="img/project/content-bg.svg" alt="Контентная картинка" />
+					<div class="tabs__text-wrapper">
+						<div class="tabs__img">
+							<img src="img/project/content-bg.svg" alt="Контентная картинка" />
+						</div>
+						<p>
+							Единое общественное пространство «СреДА!» создано в Санкт-Петербурге в апреле 2022 года. «СреДА!»
+							это
+							место для творчества, учёбы, работы и дискуссий.
+						</p>
+						<p>
+							«СреДА!» - это площадка, открытая для всех жителей и гостей города. Точка притяжения горожан:
+							активных
+							и творческих, тех, у кого есть идеи для развития Северной столицы.
+						</p>
+						<p>
+							«СреДА!» объединяет всех, кто неравнодушен к прошлому, настоящему и будущему нашего города.
+						</p>
+						<p>
+							«СреДА!» это место встречи профессиональных сообществ. Здесь проходят культурные события, выставки,
+							арт-показы, встречи, камерные концерты и спектакли.
+						</p>
+						<p>
+							«СреДА!» - это прямой диалог жителей города с представителями власти.
+						</p>
 					</div>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
-				<div id="tabs-2" class="tabs__text">
-					<div class="tabs__img">
-						<img src="img/main/space/content-bg.svg" alt="Контентная картинка" />
-					</div>
-					<p>
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veni
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-			<section class="subscription">
+					<section class="subscription">
 	<div class="subscription__container">
 		<div class="subscription__wrapper">
 			<div class="subscription__form">
@@ -213,6 +145,42 @@
 			</div>
 			<div class="subscription__image">
 				<img src="img/main/subscribe/content-bg.svg" alt="Контентная картинка" />
+			</div>
+		</div>
+	</div>
+</section>
+				</div>
+				<div id="tabs-2" class="tabs__text">
+					<div class="pictures">
+						<div class="pictures-img">
+							<picture><source srcset="img/space/1.webp" type="image/webp"><img src="img/space/1.jpg" alt="Изображение 1"></picture>
+						</div>
+						<div class="pictures-img">
+							<picture><source srcset="img/space/2.webp" type="image/webp"><img src="img/space/2.jpg" alt="Изображение 2"></picture>
+						</div>
+						<div class="pictures-img">
+							<picture><source srcset="img/space/3.webp" type="image/webp"><img src="img/space/3.jpg" alt="Изображение 3"></picture>
+						</div>
+						<div class="pictures-img">
+							<picture><source srcset="img/space/4.webp" type="image/webp"><img src="img/space/4.jpg" alt="Изображение 4"></picture>
+						</div>
+						<div class="pictures-img">
+							<picture><source srcset="img/space/5.webp" type="image/webp"><img src="img/space/5.jpg" alt="Изображение 5"></picture>
+						</div>
+						<div class="pictures-img">
+							<picture><source srcset="img/space/6.webp" type="image/webp"><img src="img/space/6.jpg" alt="Изображение 6"></picture>
+						</div>
+						<div class="pictures-img">
+							<picture><source srcset="img/space/7.webp" type="image/webp"><img src="img/space/7.jpg" alt="Изображение 6"></picture>
+						</div>
+						<div class="pictures-img">
+							<picture><source srcset="img/space/8.webp" type="image/webp"><img src="img/space/8.jpg" alt="Изображение 6"></picture>
+						</div>
+						<div class="pictures-img">
+							<picture><source srcset="img/space/9.webp" type="image/webp"><img src="img/space/9.jpg" alt="Изображение 6"></picture>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -255,10 +223,10 @@
 					<article class="tags">
 						<h4 class="tags__title">#времяменяться</h4>
 						<div class="tags__icons">
-							<a href="#" aria-label="Вк">
+							<a href="https://vk.com/spb_sreda" aria-label="Вк">
 								<img src="img/icons/vk.svg" alt="Вк" />
 							</a>
-							<a href="#" aria-label="Телеграм">
+							<a href="https://t.me/SreDA_space" aria-label="Телеграм">
 								<img src="img/icons/telegram.svg" alt="Телеграм" />
 							</a>
 						</div>
@@ -280,18 +248,30 @@
 	<!-- </div> -->
 </footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20220923075034"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20220923075034"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20220930064934"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20220930064934"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js?_v=20220930064934"></script>
 <script>
 	$(function () {
 		$(".tabs").tabs();
 	});
 </script>
-<script src="js/modules/flsWebp.js?_v=20220923075034"></script>
-<script src="js/components/menu.js?_v=20220923075034"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9976209f-3d25-429c-b530-40eb2400824d&_v=20220923075034"
+<!-- <script>
+	$(function () {
+		$(".open-modal").on('click', function (e) {
+			if (!$(".open-modal").hasClass("come-in_open")) {
+				console.log("register_open");
+			} else {
+				console.log("come-in_open");
+			}
+		})
+	});
+</script> -->
+<script src="js/modules/flsWebp.js?_v=20220930064934"></script>
+<script src="js/components/menu.js?_v=20220930064934"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9976209f-3d25-429c-b530-40eb2400824d&_v=20220930064934"
 	type="text/javascript"></script>
-<script src="js/components/placemark.js?_v=20220923075034" type="text/javascript"></script>
+<script src="js/components/placemark.js?_v=20220930064934" type="text/javascript"></script>
 </body>
 
 </html>
