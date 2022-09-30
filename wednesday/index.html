@@ -4,7 +4,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20220923075034" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20220930064934">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220930064934" />
 
 	<link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
 	<link rel="icon" type="img/favicon.ico" />
@@ -49,22 +50,28 @@
 						</ul>
 					</nav>
 					<div class="line"></div>
-					<div class="header__search textInput">
-						<input type="text" placeholder="введите запрос" />
-					</div>
+					<form action="" class="header__search textInput">
+						<legend class="textInput__subtitle">Поиск</legend>
+						<ul class="form__list">
+							<li class="form__item">
+								<input type="text" class="search" placeholder="введите запрос" />
+								<input type="submit" form="form" class="search-btn" value="">
+							</li>
+						</ul>
+					</form>
 				</div>
 				<div class="header__footer">
 					<div class="header__btns">
-						<a href="#" class="btn" aria-label="Зарегистрироваться">Зарегистрироваться</a>
-						<a href="#" class="btn" aria-label="Войти">Войти</a>
+						<a href="#register" class="btn" aria-label="Зарегистрироваться" data-fancybox>Зарегистрироваться</a>
+						<a href="#come-in" class="btn" aria-label="Войти" data-fancybox>Войти</a>
 					</div>
 					<article class="tags">
 						<h4 class="tags__title">#времяменяться</h4>
 						<div class="tags__icons">
-							<a href="#" aria-label="Вк">
+							<a href="https://vk.com/spb_sreda" aria-label="Вк">
 								<img src="img/icons/vk.svg" alt="Вк" />
 							</a>
-							<a href="#" aria-label="Телеграм">
+							<a href="https://t.me/SreDA_space" aria-label="Телеграм">
 								<img src="img/icons/telegram.svg" alt="Телеграм" />
 							</a>
 						</div>
@@ -79,7 +86,7 @@
 	<div class="space__container">
 		<div class="space__wrapper">
 			<div class="space__description">
-				<h1 class="space__title title">О пространстве</h1>
+				<a href="space.html" class="space__title title">О пространстве</a>
 				<div class="space__content">
 					<div class="space__text text">
 						Единое общественное пространство «СреДА!» - место для творчества,
@@ -95,7 +102,7 @@
 				</div>
 			</div>
 			<div class="space__developments">
-				<h2 class="space__title title">афиша/сОБЫТИЯ</h2>
+				<a href="#" class="space__title title">афиша/сОБЫТИЯ</a>
 				<div class="space__items">
 					<a href="#" class="space__item poster">
 						<div class="poster__img">
@@ -157,150 +164,172 @@
 			<section id="projects" class="projects">
 	<div class="projects__container">
 		<div class="projects__wrapper">
-			<div class="projects__title title">ПРОЕКТЫ</div>
-			<div class="projects__cards">
-				<a href="projects.html" class="projects__card card">
-					<div class="card__wrapper">
-						<div class="card__front">
-							<div class="card__img">
-								<img src="img/main/headings/lessons.svg" alt="Контентная картинка" />
-							</div>
-							<div class="card__title title-link">
-								<div>Простые уроки <span class="selection-pink">!</span></div>
-							</div>
+			<a href="#" class="projects__title title">ПРОЕКТЫ
+		</div>
+		<div class="projects__cards">
+			<a href="projects.html" class="projects__card card">
+				<div class="card__wrapper">
+					<div class="card__front">
+						<div class="card__img">
+							<img src="img/main/headings/lessons.svg" alt="Контентная картинка" />
 						</div>
-						<div class="card__back text">
-							какой-то текст какой-то текст какой-то текст какой-то текст
-							какой-то текст
+						<div class="card__title title-link">
+							<div>Простые уроки <span class="selection-pink">!</span></div>
 						</div>
 					</div>
-				</a>
-				<div class="projects__card card">
-					<div class="card__wrapper">
-						<div class="card__front">
-							<div class="card__img">
-								<img src="img/main/headings/family.svg" alt="Контентная картинка" />
-							</div>
-							<div class="card__title title-link">
-								<div>
-									С чего начинается родина?<span class="selection-pink">!</span>
-								</div>
-							</div>
-						</div>
-						<div class="card__back text">
-							какой-то текст какой-то текст какой-то текст какой-то текст
-							какой-то текст
-						</div>
+					<div class="card__back text">
+						В рамках проекта «Простые уроки» Вы найдете полезный и познавательный контент от наших друзей -
+						профессионалов своего дела, выраженный языком доступным для каждого. Представлены серии
+						видеороликов по категориям: поп-наука, тренинги от спортсменов, истории успеха, зеленая школа т.д.
+						Зарегистрируйтесь на сайте и получите полный доступ!
 					</div>
 				</div>
-				<div class="projects__card card">
-					<div class="card__wrapper">
-						<div class="card__front">
-							<div class="card__img card__img_center">
-								<img src="img/main/headings/house.svg" alt="Контентная картинка" />
-							</div>
-							<div class="card__title title-link">
-								<div>Наш дом</div>
-							</div>
+			</a>
+			<div class="projects__card card">
+				<div class="card__wrapper">
+					<div class="card__front">
+						<div class="card__img">
+							<img src="img/main/headings/family.svg" alt="Контентная картинка" />
 						</div>
-						<div class="card__back text">
-							какой-то текст какой-то текст какой-то текст какой-то текст
-							какой-то текст
+						<div class="card__title title-link">
+							<div>
+								С чего начинается родина?<span class="selection-pink">!</span>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="projects__card card">
-					<div class="card__wrapper">
-						<div class="card__front">
-							<div class="card__img">
-								<img src="img/main/headings/education.svg" alt="Контентная картинка" />
-							</div>
-							<div class="card__title title-link">
-								<div>Обществознание</div>
-							</div>
-						</div>
-						<div class="card__back text">
-							какой-то текст какой-то текст какой-то текст какой-то текст
-							какой-то текст
-						</div>
+					<div class="card__back text">
+						какой-то текст какой-то текст какой-то текст какой-то текст
+						какой-то текст
 					</div>
 				</div>
-				<div class="projects__card card">
-					<div class="card__wrapper">
-						<div class="card__front">
-							<div class="card__title title-link">
-								<div>Хороший возраст<span class="selection-pink">!</span></div>
-							</div>
+			</div>
+			<div class="projects__card card">
+				<div class="card__wrapper">
+					<div class="card__front">
+						<div class="card__img card__img_center">
+							<img src="img/main/headings/house.svg" alt="Контентная картинка" />
 						</div>
-						<div class="card__back text">
-							какой-то текст какой-то текст какой-то текст какой-то текст
-							какой-то текст
-						</div>
-					</div>
-				</div>
-				<div class="projects__card card">
-					<div class="card__wrapper">
-						<div class="card__front">
-							<div class="card__img card__img_center">
-								<img src="img/main/headings/business.svg" alt="Контентная картинка" />
-							</div>
-							<div class="card__title title-link">
-								<div>Наше дело</div>
-							</div>
-						</div>
-						<div class="card__back text">
-							какой-то текст какой-то текст какой-то текст какой-то текст
-							какой-то текст
+						<div class="card__title title-link">
+							<div>Наш дом</div>
 						</div>
 					</div>
-				</div>
-				<div class="projects__card card">
-					<div class="card__wrapper">
-						<div class="card__front">
-							<div class="card__title title-link">
-								<div>СреДА<span class="selection-pink">!</span>точие</div>
-							</div>
-						</div>
-						<div class="card__back text">
-							какой-то текст какой-то текст какой-то текст какой-то текст
-							какой-то текст
-						</div>
+					<div class="card__back text">
+						В рамках проекта «Наш дом» опытные специалисты и эксперты проводят лекции и семинары по управлению,
+						технической эксплуатации и обслуживанию многоквартирных домов.
+						Вас ждут ответы на самые актуальные и волнующие вопросы.
+						Зарегистрируйтесь на сайте и получите полный доступ!
 					</div>
 				</div>
-				<div class="projects__card card">
-					<div class="card__wrapper">
-						<div class="card__front">
-							<div class="card__img">
-								<img src="img/main/headings/live.svg" alt="Контентная картинка" />
-							</div>
-							<div class="card__title title-link">
-								<div>"СреДА" - <span class="selection-pink">LIVE</span></div>
-							</div>
+			</div>
+			<div class="projects__card card">
+				<div class="card__wrapper">
+					<div class="card__front">
+						<div class="card__img">
+							<img src="img/main/headings/education.svg" alt="Контентная картинка" />
 						</div>
-						<div class="card__back text">
-							какой-то текст какой-то текст какой-то текст какой-то текст
-							какой-то текст
+						<div class="card__title title-link">
+							<div>Обществознание</div>
 						</div>
 					</div>
+					<div class="card__back text">
+						Петиции и социальные опросы в одном месте. Участвуйте в формировании социальной среды вокруг себя!
+						Важно мнение каждого. Требуется регистрация на сайте.
+					</div>
 				</div>
-				<div class="projects__card card">
-					<div class="card__wrapper">
-						<div class="card__front">
-							<div class="card__img card__img_center">
-								<img src="img/main/headings/school.svg" alt="Контентная картинка" />
-							</div>
-							<div class="card__title title-link">
-								<div>Высшая школа</div>
-							</div>
+			</div>
+			<div class="projects__card card">
+				<div class="card__wrapper">
+					<div class="card__front">
+						<div class="card__img card__img_center">
+							<img src="img/main/headings/age.svg" alt="Контентная картинка" />
 						</div>
-						<div class="card__back text">
-							какой-то текст какой-то текст какой-то текст какой-то текст
-							какой-то текст
+						<div class="card__title title-link">
+							<div>Хороший возраст<span class="selection-pink">!</span></div>
 						</div>
+					</div>
+					<div class="card__back text">
+						50 лет и немного старше — это прекрасный возраст! Понимать и принимать себя, учиться и передавать
+						свой опыт окружающим, открывать что-то новое и наслаждаться жизнью - во всём этом вам поможет
+						проект «Хороший возраст».
+						У нас вас ждут: совместные занятия спортом, лекции признанных экспертов в самых разных областях
+						нашей жизни: от медицины, до искусства.
+						Зарегистрируйтесь на сайте и получите полный доступ!
+					</div>
+				</div>
+			</div>
+			<div class="projects__card card">
+				<div class="card__wrapper">
+					<div class="card__front">
+						<div class="card__img card__img_center">
+							<img src="img/main/headings/business.svg" alt="Контентная картинка" />
+						</div>
+						<div class="card__title title-link">
+							<div>Наше дело</div>
+						</div>
+					</div>
+					<div class="card__back text">
+						В рамках проекта «Наше дело» успешные профессионалы в разных областях познакомят вас новыми
+						образовательными и просветительскими проектами для предпринимательского сообщества: академия МСП,
+						высшая школа (профориентация и социальные лифты) и кибербезопасность.
+						Зарегистрируйтесь на сайте и получите полный доступ!
+					</div>
+				</div>
+			</div>
+			<div class="projects__card card">
+				<div class="card__wrapper">
+					<div class="card__front">
+						<div class="card__img card__img_center">
+							<img src="img/main/headings/focus.svg" alt="Контентная картинка" />
+						</div>
+						<div class="card__title title-link">
+							<div>СреДА<span class="selection-pink">!</span>точие</div>
+						</div>
+					</div>
+					<div class="card__back text">
+						Проект «СреДаточие» предлагает образовательные и просветительские проекты для НКО и общественных
+						организаций. Вас ждут опытные наставники, встречи с представителями власти, а также семинары для
+						получателей грантов.
+						Зарегистрируйтесь на сайте и получите полный доступ!
+					</div>
+				</div>
+			</div>
+			<div class="projects__card card">
+				<div class="card__wrapper">
+					<div class="card__front">
+						<div class="card__img">
+							<img src="img/main/headings/live.svg" alt="Контентная картинка" />
+						</div>
+						<div class="card__title title-link">
+							<div>"СреДА" - <span class="selection-pink">LIVE</span></div>
+						</div>
+					</div>
+					<div class="card__back text">
+						Самые интересные и актуальные мероприятия проходят в стенах Единого Общественного Пространства
+						«СреДА!»
+						Каждую неделю на нашей сценической площадке проходят концерты и выставки, встречи с интересными
+						людьми и открытые дискуссии.
+						Регистрируйтесь и смотрите онлайн, а лучше – приходите
+					</div>
+				</div>
+			</div>
+			<div class="projects__card card">
+				<div class="card__wrapper">
+					<div class="card__front">
+						<div class="card__img card__img_center">
+							<img src="img/main/headings/school.svg" alt="Контентная картинка" />
+						</div>
+						<div class="card__title title-link">
+							<div>Высшая школа</div>
+						</div>
+					</div>
+					<div class="card__back text">
+						какой-то текст какой-то текст какой-то текст какой-то текст
+						какой-то текст
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </section>
 			<section class="subscription">
@@ -331,7 +360,115 @@
 		</div>
 	</div>
 </section>
+			<div id="register" class="register modal">
+	<div class="modal__wrapper">
+		<div class="modal__agreement">
+			<div class="modal__img">
+				<img src="img/logo.svg" alt="Логотип Среды">
+			</div>
+		</div>
+		<div class="modal__content">
+			<form action="" class="form">
+				<fieldset class="form__wrapper">
+					<legend class="form__subtitle title-link">Регистрация</legend>
+					<ul class="form__list">
+						<li class="form__item">
+							<label for="company">введите email*</label>
+							<input type="text" name="mail" placeholder="введите email*">
+						</li>
+						<div class="form__inputs">
+							<li class="form__item">
+								<label for="phone">введите пароль*</label>
+								<input type="text" name="password" placeholder="введите пароль*" />
+							</li>
+							<li class="form__item">
+								<label for="mail">повторите пароль*</label>
+								<input type="text" name="password" placeholder="повторите пароль*" />
+							</li>
+						</div>
+						<li class="form__btn">
+							<input type="submit" form="form" class="btn" value="регистрация">
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+			<div class="modal__links">
+				<a href="#come-in" class="modal__link open-modal come-in_open">Уже есть аккаунт? Войти</a>
+			</div>
+		</div>
+	</div>
+</div>
+			<div id="come-in" class="come-in modal">
+	<div class="modal__wrapper">
+		<div class="modal__agreement">
+			<div class="modal__img">
+				<img src="img/logo.svg" alt="Логотип Среды">
+			</div>
+		</div>
+		<div class="modal__content">
+			<form action="" class="form">
+				<fieldset class="form__wrapper">
+					<legend class="form__subtitle title-link">Приветствуем Вас!</legend>
+					<ul class="form__list">
+						<li class="form__item">
+							<label for="company">email*</label>
+							<input type="text" name="mail" placeholder="email*">
+						</li>
+						<li class="form__item">
+							<label for="phone">пароль*</label>
+							<input type="text" name="password" placeholder="пароль*" />
+						</li>
+						<li class="form__btns">
+							<div class="form__checkbox">
+								<input type="checkbox" id="scales" name="scales" checked>
+								<label for="scales" class="modal__link checkbox-title">Запомнить меня</label>
+							</div>
+							<a href="#register" class="modal__link open-modal register_open">Забыли пароль?</a>
+						</li>
+						<li class="form__btn">
+							<a href="#register" class="modal__link open-modal register_open">Зарегистрироваться</a>
+							<input type="submit" form="form" class="btn" value="Войти">
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+			<div id="forgot-pass" class="forgot-pass modal">
+	<div class="modal__wrapper">
+		<div class="modal__agreement">
+			<div class="modal__img">
+				<img src="img/logo.svg" alt="Логотип Среды">
+			</div>
+		</div>
+		<div class="modal__content">
+			<form action="" class="form">
+				<fieldset class="form__wrapper">
+					<legend class="form__subtitle title-link">Забыли пароль?</legend>
+					<div class="form__desc">
+						Просто введите свой адрес электронной почты ниже и мы вышлем Вам ссылку для сброса пароля!
+					</div>
+					<ul class="form__list">
+						<li class="form__item">
+							<label for="company">Укажите свой email</label>
+							<input type="text" name="mail" placeholder="Укажите свой email">
+						</li>
+						<li class="form__btn">
+							<input type="submit" form="form" class="btn" value="Восстановить пароль">
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+			<div class="modal__links">
+				<a href="#" class="modal__link open-modal register_open">Создать аккаунт</a>
+				<a href="#" class="modal__link open-modal come-in_open">Уже есть аккаунт? Войти</a>
+			</div>
+		</div>
+	</div>
+</div>
 		</main>
+
 		<footer id="footer" class="footer">
 	<!-- <div class="footer__container"> -->
 	<div class="footer__wrapper">
@@ -369,10 +506,10 @@
 					<article class="tags">
 						<h4 class="tags__title">#времяменяться</h4>
 						<div class="tags__icons">
-							<a href="#" aria-label="Вк">
+							<a href="https://vk.com/spb_sreda" aria-label="Вк">
 								<img src="img/icons/vk.svg" alt="Вк" />
 							</a>
-							<a href="#" aria-label="Телеграм">
+							<a href="https://t.me/SreDA_space" aria-label="Телеграм">
 								<img src="img/icons/telegram.svg" alt="Телеграм" />
 							</a>
 						</div>
@@ -394,18 +531,30 @@
 	<!-- </div> -->
 </footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20220923075034"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20220923075034"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20220930064934"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20220930064934"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js?_v=20220930064934"></script>
 <script>
 	$(function () {
 		$(".tabs").tabs();
 	});
 </script>
-<script src="js/modules/flsWebp.js?_v=20220923075034"></script>
-<script src="js/components/menu.js?_v=20220923075034"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9976209f-3d25-429c-b530-40eb2400824d&_v=20220923075034"
+<!-- <script>
+	$(function () {
+		$(".open-modal").on('click', function (e) {
+			if (!$(".open-modal").hasClass("come-in_open")) {
+				console.log("register_open");
+			} else {
+				console.log("come-in_open");
+			}
+		})
+	});
+</script> -->
+<script src="js/modules/flsWebp.js?_v=20220930064934"></script>
+<script src="js/components/menu.js?_v=20220930064934"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9976209f-3d25-429c-b530-40eb2400824d&_v=20220930064934"
 	type="text/javascript"></script>
-<script src="js/components/placemark.js?_v=20220923075034" type="text/javascript"></script>
+<script src="js/components/placemark.js?_v=20220930064934" type="text/javascript"></script>
 </body>
 
 </html>
