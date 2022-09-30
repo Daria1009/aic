@@ -4,8 +4,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20220930070901">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220930070901" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20220930212107">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220930212107" />
 
 	<link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
 	<link rel="icon" type="img/favicon.ico" />
@@ -450,30 +450,31 @@
 	<!-- </div> -->
 </footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20220930070901"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20220930070901"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js?_v=20220930070901"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20220930212107"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20220930212107"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js?_v=20220930212107"></script>
 <script>
 	$(function () {
 		$(".tabs").tabs();
 	});
 </script>
-<!-- <script>
+<script>
 	$(function () {
-		$(".open-modal").on('click', function (e) {
-			if (!$(".open-modal").hasClass("come-in_open")) {
-				console.log("register_open");
+		$(".open-modal").on('click', function () {
+			if ($(this).hasClass("come-in_open")) {
+				// console.log("register_open");
+				$(".come-in_open").addClass('show');
 			} else {
 				console.log("come-in_open");
 			}
 		})
 	});
-</script> -->
-<script src="js/modules/flsWebp.js?_v=20220930070901"></script>
-<script src="js/components/menu.js?_v=20220930070901"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9976209f-3d25-429c-b530-40eb2400824d&_v=20220930070901"
+</script>
+<script src="js/modules/flsWebp.js?_v=20220930212107"></script>
+<script src="js/components/menu.js?_v=20220930212107"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9976209f-3d25-429c-b530-40eb2400824d&_v=20220930212107"
 	type="text/javascript"></script>
-<script src="js/components/placemark.js?_v=20220930070901" type="text/javascript"></script>
+<script src="js/components/placemark.js?_v=20220930212107" type="text/javascript"></script>
 </body>
 
 </html>
