@@ -4,8 +4,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20221001175307">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221001175307" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20221003224440">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221003224440" />
 
 	<link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
 	<link rel="icon" type="img/favicon.ico" />
@@ -62,8 +62,9 @@
 				</div>
 				<div class="header__footer">
 					<div class="header__btns">
-						<a href="#register" class="btn" aria-label="Зарегистрироваться" data-fancybox>Зарегистрироваться</a>
-						<a href="#come-in" class="btn" aria-label="Войти" data-fancybox>Войти</a>
+						<a href="#register" class="btn btn-modal register-open" aria-label="Зарегистрироваться"
+							data-fancybox>Зарегистрироваться</a>
+						<a href="#come-in" class="btn btn-modal come-in-open" aria-label="Войти" data-fancybox>Войти</a>
 					</div>
 					<article class="tags">
 						<h4 class="tags__title">#времяменяться</h4>
@@ -198,8 +199,9 @@
 						</div>
 					</div>
 					<div class="card__back text">
-						какой-то текст какой-то текст какой-то текст какой-то текст
-						какой-то текст
+						В рамках данного проекта публикуются статьи с историей России и Санкт-Петербурга. Здесь вы узнаете
+						интересные факты о нашей родине и редкие исторические фотоматериалы. Зарегистрируйтесь на сайте и
+						получите полный доступ!
 					</div>
 				</div>
 			</div>
@@ -393,7 +395,7 @@
 				</fieldset>
 			</form>
 			<div class="modal__links">
-				<a href="#come-in" class="modal__link open-modal come-in_open">Уже есть аккаунт? Войти</a>
+				<button type="button" class="modal__link open-modal come-in_open">Уже есть аккаунт? Войти</button>
 			</div>
 		</div>
 	</div>
@@ -423,10 +425,10 @@
 								<input type="checkbox" id="scales" name="scales" checked>
 								<label for="scales" class="modal__link checkbox-title">Запомнить меня</label>
 							</div>
-							<a href="#forgot-pass" class="modal__link open-modal forgot-pass_open">Забыли пароль?</a>
+							<button type="button" class="modal__link open-modal forgot-pass_open">Забыли пароль?</button>
 						</li>
 						<li class="form__btn">
-							<a href="#register" class="modal__link open-modal register_open">Зарегистрироваться</a>
+							<button type="button" class="modal__link open-modal register_open">Зарегистрироваться</button>
 							<input type="submit" form="form" class="btn" value="Войти">
 						</li>
 					</ul>
@@ -435,8 +437,8 @@
 		</div>
 	</div>
 </div>
-			<div id="forgot-pass" class="forgot-pass modal">
-	<div class="modal__wrapper">
+			<div class="forgot-pass modal">
+	<div class="modal__wrapper forgot-pass modal">
 		<div class="modal__agreement">
 			<div class="modal__img">
 				<img src="img/logo.svg" alt="Логотип Среды">
@@ -531,31 +533,56 @@
 	<!-- </div> -->
 </footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20221001175307"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20221001175307"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js?_v=20221001175307"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20221003224440"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20221003224440"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js?_v=20221003224440"></script>
 <script>
 	$(function () {
 		$(".tabs").tabs();
 	});
 </script>
 <script>
-	$(function () {
-		$(".open-modal").on('click', function () {
-			if ($(this).hasClass("come-in_open")) {
-				// console.log("register_open");
-				$(".come-in_open").addClass('show');
-			} else {
-				console.log("come-in_open");
-			}
-		})
-	});
+	// $(function () {
+	// 	$(".btn-modal").on('click', function () {
+	// 		if ($(this).hasClass('.come-in-open')) {
+	// 			$(".modal-none").removeClass('show').addClass('hidden');
+	// 			$(".come-in-inside").removeClass('hidden').addClass('show');
+	// 			$(".open-modal").on('click', function () {
+	// 				if ($(this).hasClass("come-in_open")) {
+	// 					$(".modal-none").removeClass('show').addClass('hidden');
+	// 					$(".come-in-inside").removeClass('hidden').addClass('show');
+	// 				} else if ($(this).hasClass("register_open")) {
+	// 					$(".modal-none").removeClass('show').addClass('hidden');
+	// 					$(".register-inside").removeClass('hidden').addClass('show');
+	// 				} else {
+	// 					$(".modal-none").removeClass('show').addClass('hidden');
+	// 					$(".forgot-pass-inside").removeClass('hidden').addClass('show');
+	// 				}
+	// 			})
+	// 		} else if ($(this).hasClass('.register-open')) {
+	// 			$(".modal-none").removeClass('show').addClass('hidden');
+	// 			$(".register-inside").removeClass('hidden').addClass('show');
+	// 			$(".open-modal").on('click', function () {
+	// 				if ($(this).hasClass("come-in_open")) {
+	// 					$(".modal-none").removeClass('show').addClass('hidden');
+	// 					$(".come-in-inside").removeClass('hidden').addClass('show');
+	// 				} else if ($(this).hasClass("register_open")) {
+	// 					$(".modal-none").removeClass('show').addClass('hidden');
+	// 					$(".register-inside").removeClass('hidden').addClass('show');
+	// 				} else {
+	// 					$(".modal-none").removeClass('show').addClass('hidden');
+	// 					$(".forgot-pass-inside").removeClass('hidden').addClass('show');
+	// 				}
+	// 			})
+	// 		}
+	// 	})
+	// });
 </script>
-<script src="js/modules/flsWebp.js?_v=20221001175307"></script>
-<script src="js/components/menu.js?_v=20221001175307"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9976209f-3d25-429c-b530-40eb2400824d&_v=20221001175307"
+<script src="js/modules/flsWebp.js?_v=20221003224440"></script>
+<script src="js/components/menu.js?_v=20221003224440"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9976209f-3d25-429c-b530-40eb2400824d&_v=20221003224440"
 	type="text/javascript"></script>
-<script src="js/components/placemark.js?_v=20221001175307" type="text/javascript"></script>
+<script src="js/components/placemark.js?_v=20221003224440" type="text/javascript"></script>
 </body>
 
 </html>
