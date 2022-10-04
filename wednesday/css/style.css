@@ -785,12 +785,6 @@ main {
   display: none;
 }
 
-.register,
-.come-in,
-.forgot-pass {
-  display: none;
-}
-
 /* ------------------------------- */
 
 .header {
@@ -798,7 +792,7 @@ main {
   left: 0;
   position: fixed;
   z-index: 5;
-  width: 100%;
+  width: calc(100vw - 10px);
   min-height: 252px;
   background-color: #f5f5f5;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -1860,8 +1854,27 @@ main {
   padding: 15px 70px;
 }
 
+.register-app .form__btn .btn {
+  width: 100%;
+}
+
+.register-app .modal__links {
+  margin-top: 10px;
+}
+
 .forgot-pass {
-  display: none;
+  padding-top: 312px;
+  padding-bottom: 60px;
+  margin-bottom: -60px;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.forgot-pass .modal__wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .forgot-pass .modal__links {
@@ -2161,6 +2174,10 @@ main {
 
   .mob {
     display: block;
+  }
+
+  .header {
+    width: 100%;
   }
 
   .burger {
@@ -2602,6 +2619,16 @@ main {
   .modal .form__btn .btn {
     font-size: 1rem;
   }
+
+  .forgot-pass {
+    padding-top: 270px;
+    margin-bottom: -40px;
+    padding-bottom: 40px;
+  }
+
+  .forgot-pass .modal__content {
+    padding: 0;
+  }
 }
 
 @media (max-width: 47.99875rem) and (max-width: 1620px) {
@@ -2766,6 +2793,11 @@ main {
     width: 100%;
     padding: 15px 30px;
   }
+
+  .forgot-pass {
+    margin-bottom: -20px;
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 25rem) {
@@ -2803,5 +2835,13 @@ main {
 @media (max-width: 22.5rem) {
   .poster__img {
     max-width: 100%;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
   }
 }
