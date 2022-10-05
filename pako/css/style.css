@@ -303,6 +303,11 @@ section {
   max-width: 100%;
 }
 
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 /* ------------------------------ */
 
 .form__subtitle {
