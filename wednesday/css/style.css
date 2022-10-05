@@ -785,6 +785,10 @@ main {
   display: none;
 }
 
+.come-in.modal {
+  border: none;
+}
+
 /* ------------------------------- */
 
 .header {
