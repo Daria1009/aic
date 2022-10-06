@@ -155,6 +155,7 @@ textarea,
 button {
   font-family: inherit;
   font-weight: inherit;
+  -webkit-appearance: none;
 }
 
 input:focus,
@@ -655,10 +656,6 @@ main {
   text-align: right;
 }
 
-.salutation label {
-  font-size: 0;
-}
-
 .salutation__select {
   font-family: "HeliosCond-bold";
   background: none;
@@ -670,6 +667,10 @@ main {
 
 .salutation__select:focus-visible {
   outline: none;
+}
+
+.lb-0 {
+  font-size: 0;
 }
 
 /* ------------------------------- */
@@ -1188,10 +1189,6 @@ main {
           flex-direction: column;
 }
 
-.subscription__form .form label {
-  font-size: 0;
-}
-
 .subscription__form .form__btn {
   margin-top: 15px;
   text-align: right;
@@ -1672,10 +1669,6 @@ main {
   margin-bottom: 30px;
 }
 
-.modal .form label {
-  font-size: 0;
-}
-
 .modal .form__item {
   padding: 22px;
   width: 100%;
@@ -1695,10 +1688,6 @@ main {
   gap: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.modal .form__inputs label {
-  display: none;
 }
 
 .modal .form__inputs .form__item:not(:last-child) {
