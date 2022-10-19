@@ -414,6 +414,19 @@ main {
   position: relative;
   min-width: 360px;
   height: 100%;
+  overflow: hidden;
+}
+
+.card__wrapper:hover .card__front {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) rotateY(-180deg);
+          transform: translate(-50%, -50%) rotateY(-180deg);
+}
+
+.card__wrapper:hover .card__back {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 
 .card__img {
@@ -424,17 +437,13 @@ main {
   padding-right: 20px;
 }
 
-.card__img img {
-  max-width: 100%;
+.card__img_right {
+  right: 40px;
+  left: initial;
 }
 
-.card__img_center {
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  bottom: initial;
+.card__img img {
+  max-width: 100%;
 }
 
 .card__back,
@@ -464,6 +473,31 @@ main {
 
 .card__title {
   z-index: 3;
+  position: relative;
+  top: -30%;
+}
+
+.card__title_center {
+  text-align: center;
+  max-width: 330px;
+}
+
+.card__title_left {
+  left: -25%;
+  max-width: 200px;
+  text-align: center;
+}
+
+.card__title_left img {
+  position: relative;
+  bottom: -35px;
+  left: -45%;
+}
+
+.card__title img {
+  display: block;
+  max-width: 100px;
+  margin: 0 auto;
 }
 
 .card__front,
@@ -485,18 +519,6 @@ main {
   z-index: 1;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-}
-
-.card:hover .card__front {
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%) rotateY(-180deg);
-          transform: translate(-50%, -50%) rotateY(-180deg);
-}
-
-.card:hover .card__back {
-  opacity: 1;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
 }
 
 /* ------------------------------- */
@@ -1077,11 +1099,23 @@ main {
 }
 
 .space__image {
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  bottom: 82px;
+  bottom: 0;
   right: 0;
   z-index: 2;
+  border-radius: 17px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .space__image img {
@@ -1947,6 +1981,14 @@ main {
   .card__back {
     padding: 30px;
   }
+
+  .card__title_center {
+    max-width: 100%;
+  }
+
+  .card__wrapper {
+    min-height: 300px;
+  }
 }
 
 @media (max-width: 87.5rem) {
@@ -2015,7 +2057,7 @@ main {
   }
 
   .space__content {
-    min-height: 300px;
+    min-height: 500px;
   }
 
   .space__description .text {
@@ -2076,6 +2118,17 @@ main {
     width: 100%;
     max-height: 350px;
     min-height: 350px;
+  }
+}
+
+@media (max-width: 75rem) {
+  .card__title_left {
+    left: -15%;
+  }
+
+  .card__title img {
+    max-width: 80px;
+    bottom: -25px;
   }
 }
 
@@ -2348,6 +2401,24 @@ main {
     left: 50%;
   }
 
+  .card__img_right {
+    right: 20px;
+    left: initial;
+  }
+
+  .card__title {
+    padding: 0;
+  }
+
+  .card__title_left {
+    left: -25%;
+  }
+
+  .card__title_left img {
+    left: -50%;
+    bottom: -20px;
+  }
+
   .tabs__header {
     margin-bottom: 30px;
   }
@@ -2477,15 +2548,12 @@ main {
   }
 
   .space__content {
-    min-width: 410px;
+    min-width: 100%;
+    min-height: 300px;
   }
 
   .space__developments .title {
     margin-bottom: 20px;
-  }
-
-  .space__image {
-    bottom: 65px;
   }
 
   .subscription__form .form__btn .btn {
@@ -2634,12 +2702,6 @@ main {
   }
 }
 
-@media (max-width: 47.99875rem) and (max-width: 1620px) {
-  .space__content {
-    min-width: calc(200px + 210 * ((100vw - 320px) / 1300));
-  }
-}
-
 @media (max-width: 42.5rem) {
   .header {
     min-height: 230px;
@@ -2718,6 +2780,14 @@ main {
         flex-wrap: wrap;
   }
 
+  .card__title_left {
+    left: 0;
+  }
+
+  .card__back {
+    padding: 0;
+  }
+
   .main {
     margin-top: 212px;
   }
@@ -2746,10 +2816,6 @@ main {
 
   .space__description .title {
     margin-bottom: 20px;
-  }
-
-  .space__image {
-    bottom: 50px;
   }
 
   .description {
@@ -2832,6 +2898,10 @@ main {
 
   .menu {
     top: 68%;
+  }
+
+  .space__content {
+    min-height: 200px;
   }
 }
 
