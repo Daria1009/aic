@@ -221,7 +221,7 @@ main {
 }
 
 .title-link {
-  font-size: 3rem;
+  font-size: 2.875rem;
   line-height: 1.16;
 }
 
@@ -707,7 +707,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -23px;
+  margin: 0 -15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -720,36 +720,41 @@ main {
 
 .employee__card {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  padding: 0 23px;
-  min-width: 680px;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  padding: 0 15px;
+  width: 100%;
+  min-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .employee__content {
-  padding: 15px;
-  padding-right: 45px;
+  width: 100%;
+  padding: 10px;
   background-color: rgba(165, 185, 196, 0.24);
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 20px 25px;
 }
 
 .employee__img {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 255px;
-          flex: 0 0 255px;
+      -ms-flex: 0 0 175px;
+          flex: 0 0 175px;
   overflow: hidden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   border-radius: 20px;
 }
 
 .employee__img img {
   max-width: 100%;
+  height: 100%;
 }
 
 .employee__info {
@@ -763,9 +768,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   row-gap: 15px;
   padding: 10px 0;
 }
@@ -779,8 +784,14 @@ main {
   line-height: 1.75;
 }
 
+.employee__job-title {
+  font-size: 1.125rem;
+}
+
 .employee__text {
-  font-size: 1.25rem;
+  font-family: HeliosCond;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
@@ -795,6 +806,29 @@ main {
   row-gap: 10px;
   font-size: 1.125rem;
   text-transform: uppercase;
+  word-break: break-all;
+}
+
+.employee-main {
+  margin: 0 -23px;
+}
+
+.employee-main__card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 0 23px;
+  min-width: 600px;
+}
+
+.employee-main__card .employee__content {
+  padding: 15px 20px 15px 15px;
+}
+
+.employee-main__card .employee__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 255px;
+          flex: 0 0 255px;
 }
 
 .category {
@@ -816,6 +850,86 @@ main {
 
 .come-in.modal {
   border: none;
+}
+
+.partners__icon {
+  max-width: 400px;
+}
+
+.partners__icon img {
+  width: 100%;
+}
+
+.organ-form__wrapper {
+  border-radius: 15px;
+  border: 4px solid #dde5e9;
+  overflow: hidden;
+}
+
+.organ-form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.organ-form__item label,
+.organ-form__item input,
+.organ-form__item textarea {
+  width: 50%;
+  padding: 14px 20px;
+  font-family: "HeliosCond";
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  resize: none;
+}
+
+.organ-form__item label {
+  border-right: 4px solid rgba(165, 185, 196, 0.58);
+}
+
+.organ-form__item input,
+.organ-form__item textarea {
+  background-color: transparent;
+}
+
+.organ-form__item:not(:last-child) {
+  border-bottom: 4px solid rgba(165, 185, 196, 0.58);
+}
+
+.organ-form__item fieldset {
+  padding: 7px 15px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.organ-form__item fieldset select {
+  color: #000;
+  text-transform: none;
+  font-family: HeliosCond;
+}
+
+.organ-form__btn {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.organ-form__btn .btn {
+  display: block;
+  margin-left: auto;
+  width: 50%;
 }
 
 /* ------------------------------- */
@@ -1194,6 +1308,17 @@ main {
   padding: 0 16px;
 }
 
+.projects__card .text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects__card .text p {
+  margin-bottom: 10px;
+}
+
 .subscription {
   padding-top: 312px;
 }
@@ -1409,34 +1534,53 @@ main {
   margin-bottom: 30px;
 }
 
-.organizations .tabs__content {
+.organizations .tabs__wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .organizations .tabs__title {
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  text-align: center;
 }
 
 .organizations .tabs__list::before {
-  width: 410px;
+  width: 735px;
+}
+
+.organizations .tabs__image {
+  bottom: 25%;
+  z-index: -1;
 }
 
 .organizations .tabs__text {
+  max-width: 780px;
+  margin: 50px auto 0;
+}
+
+.organizations .tabs__text p:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.organizations .tabs__partners {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  row-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  line-height: 1.75;
-  margin: 0 -22px 30px;
+  gap: 30px 70px;
 }
 
-.organizations .tabs__text p {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  padding: 0 22px;
+.organizations .tabs__form {
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .organizations .employee {
@@ -1445,6 +1589,15 @@ main {
 
 .organizations .employee__card {
   padding: 0 15px;
+}
+
+.organizations .partners {
+  padding-bottom: 140px;
+  margin-bottom: 40px;
+}
+
+.organizations .partners .tabs__image {
+  bottom: 0;
 }
 
 .list {
@@ -1557,6 +1710,10 @@ main {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 117px;
           flex: 0 0 117px;
+}
+
+.footer__logo-2 {
+  margin-top: 18px;
 }
 
 .footer__logo img {
@@ -2048,6 +2205,12 @@ main {
   .title-link {
     font-size: 2.25rem;
   }
+
+  .employee-main__card .employee__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 220px;
+            flex: 0 0 220px;
+  }
 }
 
 @media (max-width: 81.25rem) {
@@ -2129,6 +2292,24 @@ main {
   .card__title img {
     max-width: 80px;
     bottom: -25px;
+  }
+
+  .employee__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+
+  .employee-main__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
+  }
+
+  .employee-main__card .employee__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 255px;
+            flex: 0 0 255px;
   }
 }
 
@@ -2230,6 +2411,18 @@ main {
 
   .mob {
     display: block;
+  }
+
+  .employee-main__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+
+  .employee-main__card .employee__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 255px;
+            flex: 0 0 255px;
   }
 
   .header {
@@ -2435,19 +2628,16 @@ main {
     row-gap: 20px;
   }
 
-  .employee__card {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    min-width: 100%;
-  }
-
   .employee__subtitle {
     font-size: 1.125rem;
   }
 
   .employee__title {
     margin-bottom: 20px;
+  }
+
+  .employee__card {
+    min-width: auto;
   }
 
   .employee__content {
@@ -2464,6 +2654,30 @@ main {
 
   .employee__contacts {
     font-size: 1rem;
+  }
+
+  .employee__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 255px;
+            flex: 0 0 255px;
+  }
+
+  .employee__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .employee-main__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .employee-main__card .employee__info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .category {
@@ -2603,9 +2817,12 @@ main {
     margin-bottom: 20px;
   }
 
-  .organizations .tabs__image {
-    bottom: initial;
-    top: 50px;
+  .organizations .tabs__text p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .organizations .tabs__title {
+    min-width: auto;
   }
 
   .list {
@@ -2652,8 +2869,8 @@ main {
 
   .footer__logo {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 80px;
-            flex: 0 0 80px;
+        -ms-flex: 0 0 90px;
+            flex: 0 0 90px;
   }
 
   .footer__map {
@@ -2759,6 +2976,48 @@ main {
   .poster__img img {
     margin: 0 auto;
   }
+
+  .organ-form__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .organ-form__item label,
+  .organ-form__item input,
+  .organ-form__item textarea {
+    width: 100%;
+  }
+
+  .organ-form__item label {
+    border: none;
+    border-bottom: 2px solid rgba(165, 185, 196, 0.38);
+  }
+
+  .organ-form__btn .btn {
+    font-size: 1rem;
+  }
+
+  .organizations .tabs__form {
+    max-width: 100%;
+  }
+
+  .employee__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
+  }
+
+  .employee-main__card {
+    min-width: 100%;
+  }
+
+  .employee-main__card .employee__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 255px;
+            flex: 0 0 255px;
+  }
 }
 
 @media (max-width: 34.3125rem) {
@@ -2786,6 +3045,31 @@ main {
 
   .card__back {
     padding: 0;
+  }
+
+  .organ-form__item label,
+  .organ-form__item input,
+  .organ-form__item textarea {
+    padding: 7px 15px;
+    font-size: 1rem;
+  }
+
+  .organ-form__btn .btn {
+    width: 100%;
+  }
+
+  .organ-form__item fieldset {
+    width: 100%;
+  }
+
+  .organ-form__item fieldset select {
+    font-size: 1rem;
+  }
+
+  .employee__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
   }
 
   .main {
@@ -2820,6 +3104,14 @@ main {
 
   .description {
     padding-top: 282px;
+  }
+
+  .organizations .tabs__text {
+    margin: 20px auto 0;
+  }
+
+  .organizations .tabs__title {
+    font-size: 1.125rem;
   }
 
   .list {
@@ -2908,13 +3200,5 @@ main {
 @media (max-width: 22.5rem) {
   .poster__img {
     max-width: 100%;
-  }
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  select:focus,
-  textarea:focus,
-  input:focus {
-    font-size: 16px;
   }
 }
