@@ -754,7 +754,6 @@ main {
 
 .employee__img img {
   max-width: 100%;
-  height: 100%;
 }
 
 .employee__info {
@@ -2204,6 +2203,10 @@ main {
 @media (max-width: 85.625rem) {
   .title-link {
     font-size: 2.25rem;
+  }
+
+  .employee__img img {
+    height: 100%;
   }
 
   .employee-main__card .employee__img {
