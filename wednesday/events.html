@@ -83,37 +83,148 @@
 	</div>
 </header>
 		<main class="main">
-			<section class="forgot-pass modal">
-				<div class="forgot-pass__container">
-					<div class="modal__wrapper">
-						<div class="modal__agreement">
-							<div class="modal__img">
-								<img src="img/logo.svg" alt="Логотип Среды">
+			<section class="events">
+				<div class="events__container">
+					<h1 class="events__title title">афиша/сОБЫТИЯ</h1>
+					<div class="events__filter">
+						<div class="events__month">
+							<img src="img/icons/date.svg" alt="date">
+							<form class="events__date">
+								<select name="salutation-month" class="salutation__select">
+									<option disabled="" selected="">месяц</option>
+									<option>январь</option>
+									<option>февраль</option>
+									<option>март</option>
+									<option>апрель</option>
+									<option>май</option>
+									<option>июнь</option>
+									<option>июль</option>
+									<option>август</option>
+									<option>сентябрь</option>
+									<option>октябрь</option>
+									<option>ноябрь</option>
+									<option>декабрь</option>
+								</select>
+								<select name="salutation-year" class="salutation__select">
+									<option>2022</option>
+									<option>2021</option>
+									<option>2020</option>
+									<option>2019</option>
+								</select>
+							</form>
+						</div>
+						<form class="events__btns">
+							<button type="submit" class="events__btn">месяц</button>
+							<button type="submit" class="events__btn">неделя</button>
+							<button type="submit" class="events__btn">день</button>
+							<button type="submit" class="events__btn">все</button>
+						</form>
+					</div>
+					<div class="events__wrapper">
+						<h2 class="events__subtitle title">октябрь 2022</h2>
+						<div class="events__items">
+							<div class="events__item">
+								<div class="events__image">
+									<picture><source srcset="img/main/poster/1.webp" type="image/webp"><img src="img/main/poster/1.jpg" alt="Контентная картинка"></picture>
+								</div>
+								<div class="events__content">
+									<div class="events__desc">
+										<div class="events__name name">
+											Недели северных стран
+											в Санкт-Петербурге
+										</div>
+										<div class="events__text">
+											Более десяти лет международный некоммерческий фестиваль в сфере культуры и искусства
+											«Недели Северных стран», посвященный теме добрососедских отношений, воплощает в жизнь
+											свою главную идею...
+										</div>
+									</div>
+									<div class="events__actions">
+										<div class="events__sending">
+											<a href="#" class="events__link">
+												<img src="img/icons/share.svg" alt="Поделиться">
+											</a>
+											<a href="#" class="events__link">
+												<img src="img/icons/star.svg" alt="В избранное">
+											</a>
+										</div>
+										<div class="events__more">
+											<a href="card-event.html" class="btn">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="events__date-event">
+									<div>
+										<div class="events__info name">
+											<img src="img/icons/date.svg" alt="Календарь">
+											18 октября
+										</div>
+										<div class="events__info name">
+											<img src="img/icons/time.svg" alt="Часы">
+											12:24
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="events__item">
+								<div class="events__image">
+									<picture><source srcset="img/main/poster/1.webp" type="image/webp"><img src="img/main/poster/1.jpg" alt="Контентная картинка"></picture>
+								</div>
+								<div class="events__content">
+									<div class="events__desc">
+										<div class="events__name name">
+											Недели северных стран
+											в Санкт-Петербурге
+										</div>
+										<div class="events__text">
+											Более десяти лет международный некоммерческий фестиваль в сфере культуры и искусства
+											«Недели Северных стран», посвященный теме добрососедских отношений, воплощает в жизнь
+											свою главную идею...
+										</div>
+									</div>
+									<div class="events__actions">
+										<div class="events__sending">
+											<a href="#" class="events__link">
+												<img src="img/icons/share.svg" alt="Поделиться">
+											</a>
+											<a href="#" class="events__link">
+												<img src="img/icons/star.svg" alt="В избранное">
+											</a>
+										</div>
+										<div class="events__more">
+											<a href="card-event.html" class="btn">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="events__date-event">
+									<div>
+										<div class="events__info name">
+											<img src="img/icons/date.svg" alt="Календарь">
+											18 октября
+										</div>
+										<div class="events__info name">
+											<img src="img/icons/time.svg" alt="Часы">
+											12:24
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="modal__content">
-							<form action="" class="form">
-								<fieldset class="form__wrapper">
-									<legend class="form__subtitle title-link">Забыли пароль?</legend>
-									<div class="form__desc">
-										Просто введите свой адрес электронной почты ниже и мы вышлем Вам ссылку для сброса пароля!
-									</div>
-									<ul class="form__list">
-										<li class="form__item">
-											<label for="company" class="lb-0">Укажите свой email</label>
-											<input type="text" name="mail" placeholder="Укажите свой email">
-										</li>
-										<li class="form__btn">
-											<input type="submit" form="form" class="btn" value="Восстановить пароль">
-										</li>
-									</ul>
-								</fieldset>
-							</form>
-							<div class="modal__links">
-								<a href="#come-in" class="modal__link open-modal register-open" data-fancybox>Создать
-									аккаунт</a>
-								<a href="#come-in" class="modal__link open-modal come-in-open" data-fancybox>Уже есть аккаунт?
-									Войти</a>
+						<div class="pagination">
+							<div class="pagination__content">
+								<a href="#" class="pagination__prev">
+									<img src="img/icons/arrow.svg" alt="arrow">
+								</a>
+								<ul>
+									<li><a href="#" class="current">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+								</ul>
+								<a href="#" class="pagination__next">
+									<img src="img/icons/arrow.svg" alt="arrow">
+								</a>
 							</div>
 						</div>
 					</div>
