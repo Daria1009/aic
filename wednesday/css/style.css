@@ -279,9 +279,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -597,12 +597,6 @@ main {
       flex-wrap: wrap;
 }
 
-.tabs__title {
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
-}
-
 .tabs__content {
   position: relative;
   overflow: hidden;
@@ -646,7 +640,7 @@ main {
 .tabs__img {
   margin: 0 0 10px 35px;
   float: right;
-  max-width: 60%;
+  max-width: 45%;
 }
 
 .tabs__img img {
@@ -662,7 +656,7 @@ main {
           transform: translateX(-50%);
   max-width: 770px;
   width: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .tabs__image img {
@@ -673,7 +667,7 @@ main {
   font-family: HeliosCond;
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 1.5;
+  line-height: 2.1;
 }
 
 .tabs__text p {
@@ -737,6 +731,19 @@ main {
   display: flex;
 }
 
+.employee__addit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
 .employee__content {
   width: 100%;
   padding: 10px;
@@ -746,6 +753,17 @@ main {
   display: -ms-flexbox;
   display: flex;
   gap: 20px 25px;
+}
+
+.employee__icon {
+  display: block;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.employee__icon img {
+  width: 100%;
+  max-height: 100%;
 }
 
 .employee__img {
@@ -1006,10 +1024,6 @@ main {
 
 /* ------------------------------- */
 
-option:hover {
-  background-color: yellow !important;
-}
-
 .header {
   top: 0;
   left: 0;
@@ -1110,7 +1124,7 @@ option:hover {
 }
 
 .header__footer {
-  margin: 0 0 10px 27px;
+  margin: 0 0 0 27px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 422px;
           flex: 0 0 422px;
@@ -1246,6 +1260,10 @@ option:hover {
   z-index: 3;
   -webkit-filter: invert(19%) sepia(88%) saturate(1506%) hue-rotate(194deg) brightness(90%) contrast(97%);
           filter: invert(19%) sepia(88%) saturate(1506%) hue-rotate(194deg) brightness(90%) contrast(97%);
+}
+
+.accred-btn {
+  display: none;
 }
 
 /* --------------------- */
@@ -1624,7 +1642,7 @@ option:hover {
 }
 
 .organizations .tabs__list::before {
-  width: 735px;
+  width: 530px;
 }
 
 .organizations .tabs__image {
@@ -1846,6 +1864,42 @@ option:hover {
 .card-event__btn {
   padding: 15px 50px;
   margin: 28px 0 0 auto;
+}
+
+.home {
+  padding-top: 312px;
+}
+
+.home .tabs__form .tabs__title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.home .organ-form {
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.accreditation {
+  padding-top: 302px;
+}
+
+.accreditation__wrapper {
+  margin: 0 auto;
+  max-width: 780px;
+}
+
+.accreditation .tabs__title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.accreditation .tabs__form {
+  margin-bottom: 20px;
 }
 
 .events {
@@ -2698,6 +2752,10 @@ option:hover {
   .header .tags__title {
     font-size: 1.75rem;
   }
+
+  .header .tags .btn {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 80.375rem) {
@@ -2769,10 +2827,10 @@ option:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    row-gap: 20px;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px;
   }
 
   .header__btns {
@@ -2781,6 +2839,10 @@ option:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 10px;
+  }
+
+  .header__btns .btn {
+    font-size: 0.875rem;
   }
 
   .header .tags {
@@ -2792,6 +2854,15 @@ option:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .header .tags__icons {
+    display: none;
+  }
+
+  .header .tags .btn {
+    font-size: 0.875rem;
+    width: 100%;
   }
 }
 
@@ -3238,15 +3309,12 @@ option:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -3366,7 +3434,7 @@ option:hover {
   }
 
   .list .employee__content {
-    padding: 20px;
+    padding: 15px;
   }
 
   .list .employee__info {
@@ -3376,6 +3444,16 @@ option:hover {
 
   .list .employee__date {
     font-size: 1.125rem;
+  }
+
+  .list .employee__video {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .list .employee__icon {
+    max-width: 25px;
   }
 
   .list .tabs__image {
@@ -3475,10 +3553,6 @@ option:hover {
             justify-content: flex-start;
   }
 
-  .header .tags {
-    display: none;
-  }
-
   .header__logo {
     position: absolute;
     top: 20px;
@@ -3487,6 +3561,18 @@ option:hover {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     max-width: 60px;
+  }
+
+  .header__btns .btn {
+    font-size: 0.75rem;
+    min-width: auto;
+    padding: 10px;
+  }
+
+  .header .tags .btn {
+    font-size: 0.75rem;
+    min-width: auto;
+    padding: 10px;
   }
 
   .menu {
@@ -3617,6 +3703,10 @@ option:hover {
             flex: 0 0 80%;
   }
 
+  .tabs__image {
+    display: none;
+  }
+
   .main {
     margin-top: 212px;
   }
@@ -3629,14 +3719,17 @@ option:hover {
     padding-bottom: 20px;
   }
 
-  .header__btns {
-    row-gap: 6px;
+  .header__footer {
+    margin-left: auto;
+    max-width: 80%;
   }
 
-  .header__btns .btn {
-    font-size: 0.75rem;
-    min-width: auto;
-    padding: 12px 15px;
+  .header .tags {
+    display: none;
+  }
+
+  .accred-btn {
+    display: block;
   }
 
   .space {
