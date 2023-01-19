@@ -70,4 +70,43 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
+
+	//------------------------sliders----------------------------
+
+	var swiper = new Swiper(".slider1", {
+		slidesPerView: 6,
+		freeMode: true,
+		watchSlidesProgress: true,
+		breakpoints: {
+			320: {
+			  slidesPerView: 1,
+			},
+			500: {
+			  slidesPerView: 2,
+			},
+			700: {
+			  slidesPerView: 3,
+			},
+			992: {
+			  slidesPerView: 4,
+			},
+			1200: {
+			  slidesPerView: 6,
+			}
+		 }
+	});
+	var swiper2 = new Swiper(".slider2", {
+		spaceBetween: 10,
+		autoHeight: true,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: swiper,
+		},
+		mousewheel: {
+			invert: true,
+		 },
+	});
 });
