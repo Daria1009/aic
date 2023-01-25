@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230125083240" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230125083240">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230125211103" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230125211103">
 
 	<link rel="alternate icon" class="js-site-favicon" type="image/png" href="img/favicon.png">
 	<link rel="icon" class="js-site-favicon" type="image/svg+xml" href="img/favicon.svg">
@@ -27,10 +27,10 @@
 				<div class="header__menu menu nav-js" data-active="false">
 					<nav>
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="hov-link-line">О нас</a></li>
-							<li class="menu__item"><a href="#" class="hov-link-line">Услуги</a></li>
-							<li class="menu__item"><a href="#" class="hov-link-line">Проекты</a></li>
-							<li class="menu__item"><a href="#" class="hov-link-line">Контакты</a></li>
+							<li class="menu__item"><a href="#aboutUs" class="hov-link-line">О нас</a></li>
+							<li class="menu__item"><a href="#services" class="hov-link-line">Услуги</a></li>
+							<li class="menu__item"><a href="#projects" class="hov-link-line">Проекты</a></li>
+							<li class="menu__item"><a href="#footer" class="hov-link-line">Контакты</a></li>
 						</ul>
 					</nav>
 					<div class="header__desc">
@@ -48,7 +48,7 @@
 	</div>
 </header>
 		<main class="main">
-			<section class="about-us">
+			<section class="about-us" id="aboutUs">
 				<div class="about-us__container">
 					<div class="about-us__wrapper">
 						<div class="about-us__item">
@@ -100,7 +100,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="services">
+			<section class="services" id="services">
 				<div class="services__container">
 					<div class="services__wrapper">
 						<h2 class="services__title title">УСЛУГИ<span></span></h2>
@@ -254,7 +254,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="projects">
+			<section class="projects" id="projects">
 				<div class="projects__container">
 					<div class="projects__wrapper">
 						<h2 class="projects__title title">ПРОЕКТЫ<span></span></h2>
@@ -307,7 +307,7 @@
 								<form class="form" action="">
 									<div class="form__title">свяжитесь с нами</div>
 									<input class="form__input" type="text" placeholder="компания">
-									<input class="form__input" type="text" placeholder="телефон">
+									<input class="form__input phone-mask" type="text" placeholder="телефон">
 									<input class="form__input" type="text" placeholder="email">
 									<input class="form__btn" type="submit">
 								</form>
@@ -317,7 +317,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="footer">
 	<div class="footer__container">
 		<div class="footer__wrapper">
 			<div class="footer__header">
@@ -332,16 +332,16 @@
 			<div class="footer__content">
 				<ul class="footer__links">
 					<li class="footer__link">
-						<a href="#" class="hov-link-line_grey">О нас </a>
+						<a href="#aboutUs" class="hov-link-line_grey">О нас </a>
 					</li>
 					<li class="footer__link">
-						<a href="#" class="hov-link-line_grey">Услуги</a>
+						<a href="#services" class="hov-link-line_grey">Услуги</a>
 					</li>
 					<li class="footer__link">
-						<a href="#" class="hov-link-line_grey">Проекты</a>
+						<a href="#projects" class="hov-link-line_grey">Проекты</a>
 					</li>
 					<li class="footer__link">
-						<a href="#" class="hov-link-line_grey">Контакты</a>
+						<a href="#footer" class="hov-link-line_grey">Контакты</a>
 					</li>
 				</ul>
 				<div class="footer__reserved">
@@ -368,10 +368,14 @@
 	</div>
 </footer>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230125083240"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230125083240"></script>
-<script type="text/javascript" src="js/revealer.js?_v=20230125083240"></script>
-<script type="text/javascript" src="js/app.js?_v=20230125083240"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230125211103"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230125211103"></script>
+
+<script type="text/javascript" src="https://csartel.ru/wp-content/themes/theme/js/imask.js?ver=6.0.3&_v=20230125211103"
+	id="imask-js"></script>
+
+<script type="text/javascript" src="js/revealer.js?_v=20230125211103"></script>
+<script type="text/javascript" src="js/app.js?_v=20230125211103"></script>
 </body>
 
 </html>
