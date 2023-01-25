@@ -92,12 +92,13 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 			1200: {
 			  slidesPerView: 6,
-			}
-		 }
+			},
+		 },
 	});
 	var swiper2 = new Swiper(".slider2", {
 		spaceBetween: 10,
 		autoHeight: true,
+		speed: 1000,
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
@@ -107,6 +108,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 		mousewheel: {
 			invert: true,
+		 },
+		 breakpoints: {
+			320: {
+				speed: 500,
+			 },
+			 500: {
+				speed: 1000,
+			 },
 		 },
 	});
 });
