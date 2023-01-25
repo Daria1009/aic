@@ -118,4 +118,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			 },
 		 },
 	});
+
+	//------------------------mask phone----------------------------
+	if (document.querySelector('.phone-mask')) {
+		document.querySelectorAll('.phone-mask').forEach(el => {
+			let phoneMask = IMask(el, { mask: '+{7}(000)-000-00-00' });
+		})
+	}
 });
