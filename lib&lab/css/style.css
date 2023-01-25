@@ -45,6 +45,22 @@ h6 {
   font-size: inherit;
 }
 
+select,
+textarea,
+input[type=text],
+input[type=button],
+input[type=submit] {
+  -webkit-appearance: none;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -59,14 +75,6 @@ body.lock {
   overflow: hidden;
   -ms-touch-action: none;
       touch-action: none;
-}
-
-button {
-  background: none;
-  outline: none;
-  border: none;
-  padding: 0;
-  margin: 0;
 }
 
 /* ---------------- */
@@ -1302,7 +1310,7 @@ section {
   }
 
   .about-us {
-    padding: 110px 0 30px;
+    padding: 110px 0 0;
   }
 
   .about-us__wrapper {
