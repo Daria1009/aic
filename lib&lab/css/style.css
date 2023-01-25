@@ -51,6 +51,7 @@ input[type=text],
 input[type=button],
 input[type=submit] {
   -webkit-appearance: none;
+  border-radius: 0;
 }
 
 button {
@@ -582,6 +583,7 @@ section {
   grid-area: b;
   background-color: var(--grey);
   padding-left: calc(95px + 30 * (100vw - 320px) / 1600);
+  font-weight: 600;
 }
 
 .about-us__item:nth-child(2) .text-border {
