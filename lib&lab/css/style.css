@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css?family=M+PLUS+1:regular,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1:300,regular,500,600,700,800,900&display=swap");
 
 *,
 *::after,
@@ -499,9 +499,9 @@ section {
   border-radius: 100%;
   top: 125px;
   left: 53%;
-  -webkit-transform: translateX(-41%);
-      -ms-transform: translateX(-41%);
-          transform: translateX(-41%);
+  -webkit-transform: translateX(-45%);
+      -ms-transform: translateX(-45%);
+          transform: translateX(-45%);
 }
 
 .about-us__desc {
@@ -546,9 +546,9 @@ section {
   padding: 25px 85px 0 40px;
   padding-bottom: calc(30px + 50 * (100vw - 320px) / 1600);
   grid-area: a;
-  background-color: var(--black);
+  background-color: #3c3838;
   color: var(--white);
-  mix-blend-mode: hard-light;
+  font-weight: 400;
 }
 
 .about-us__item:nth-child(1) .title {
@@ -563,7 +563,7 @@ section {
 .about-us__item:nth-child(1)::after {
   position: absolute;
   content: "";
-  background-color: chocolate;
+  background-color: var(--orange);
   height: 120px;
   width: 100%;
   top: 150px;
@@ -584,6 +584,7 @@ section {
   background-color: var(--grey);
   padding-left: calc(95px + 30 * (100vw - 320px) / 1600);
   font-weight: 600;
+  color: var(--blue_dark);
 }
 
 .about-us__item:nth-child(2) .text-border {
