@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20221005080245">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221005080245">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20230204225001">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230204225001">
 	<link rel="apple-touch-icon" href="img/icons/favicon.svg">
 	<link type="image/svg+xml" href="img/icons/favicon.svg" rel="icon">
 
@@ -241,7 +241,7 @@
 			<h2 class="tariffs__title">тарифы</h2>
 			<div class="tariffs__cards">
 				<div class="tariffs__card">
-					<h3 class="btn border tariffs__name">МИНИМУМ</h3>
+					<h3 class="border tariffs__name">МИНИМУМ</h3>
 					<div class="tariffs__text">
 						<ul>
 							<li>текст</li>
@@ -255,10 +255,10 @@
 							<li>текст</li>
 						</ul>
 					</div>
-					<div class="btn btn_orange border">запросить расчет</div>
+					<a href="#modal-tariffs" data-fancybox class="btn btn_orange border">запросить расчет</a>
 				</div>
 				<div class="tariffs__card">
-					<h3 class="btn btn_greyLight border tariffs__name">
+					<h3 class="tariffs__name_greyLight border tariffs__name">
 						взвешенный
 					</h3>
 					<div class="tariffs__text">
@@ -274,10 +274,10 @@
 							<li>текст</li>
 						</ul>
 					</div>
-					<div class="btn btn_orange border">запросить расчет</div>
+					<a href="#modal-tariffs" data-fancybox class="btn btn_orange border">запросить расчет</a>
 				</div>
 				<div class="tariffs__card">
-					<h3 class="btn btn_bee border tariffs__name">премиум</h3>
+					<h3 class="tariffs__name_bee border tariffs__name">премиум</h3>
 					<div class="tariffs__text">
 						<ul>
 							<li>текст</li>
@@ -291,7 +291,7 @@
 							<li>текст</li>
 						</ul>
 					</div>
-					<div class="btn btn_orange border">запросить расчет</div>
+					<a href="#modal-tariffs" data-fancybox class="btn btn_orange border">запросить расчет</a>
 				</div>
 			</div>
 			<div class="tariffs__table">
@@ -390,7 +390,7 @@
 								</ul>
 							</fieldset>
 							<div class="agreement">
-								<span>Нажимая кнопку, я принимаю соглашение об обработке персональных данных</span>
+								Нажимая кнопку, я принимаю соглашение об <a href="#">обработке персональных данных</a>
 							</div>
 						</form>
 					</div>
@@ -481,7 +481,68 @@
 								</ul>
 							</fieldset>
 							<div class="agreement">
-								<span>Нажимая кнопку, я принимаю соглашение об обработке персональных данных</span>
+								Нажимая кнопку, я принимаю соглашение об <a href="#">обработке персональных данных</a>
+							</div>
+						</form>
+					</div>
+					<di class="modal__bg">
+						<img src="img/modal/bg.svg" alt="Фоновая картинка">
+					</di>
+				</div>
+			</div>
+			<div id="modal-tariffs" class="modal modal-tariffs">
+				<div class="modal__wrapper">
+					<div class="modal__content">
+						<div class="modal__agreement">
+							<div class="modal__img">
+								<img src="img/modal/logo.svg" alt="Логотип Pako">
+							</div>
+							<ul class="modal__list">
+								<li class="modal__item">
+									Наши специалисты проведут предварительный анализ присутствия Вашей компании в геосерсисах и
+									подготовят отчет (for free, естественно).
+								</li>
+								<li class="modal__item">
+									Для расчета стоимости услуги для Вашего бизнеса заполните форму и в ближайшее время наши
+									специалисты свяжутся с Вами!
+								</li>
+							</ul>
+						</div>
+						<form action="" class="form">
+							<fieldset class="form__wrapper">
+								<legend class="form__subtitle border">ТАРИФ <span>ПРЕМИУМ</span></legend>
+								<ul class="form__list">
+									<li class="form__item">
+										<label for="company">контактное лицо*</label>
+										<input type="text" placeholder="контактное лицо*">
+									</li>
+									<li class="form__item">
+										<label for="company">компания*</label>
+										<input type="text" placeholder="компания*">
+									</li>
+									<li class="form__item">
+										<label for="phone">телефон*</label>
+										<input class="phone" name="phone" type="text" placeholder="телефон*" />
+									</li>
+									<li class="form__item">
+										<label for="mail">email*</label>
+										<input type="text" name="mail" placeholder="email" />
+									</li>
+									<li class="form__item">
+										<label for="company">ссылка на сайт Вашей компании*</label>
+										<input type="text" placeholder="ссылка на сайт Вашей компании*">
+									</li>
+									<li class="form__item">
+										<label for="company">количество филиалов*</label>
+										<input type="number" placeholder="количество филиалов*">
+									</li>
+									<li class="form__btn">
+										<input type="submit" form="form" class="btn btn_orange border" value="Отправить">
+									</li>
+								</ul>
+							</fieldset>
+							<div class="agreement">
+								Нажимая кнопку, я принимаю соглашение об <a href="#">обработке персональных данных</a>
 							</div>
 						</form>
 					</div>
@@ -533,20 +594,19 @@
 		</div>
 		<div class="footer__dev">
 			<span>разработано в</span>
-			<a href="https://dfgroup.tech/">
-				<img src="img/icons/logo-dfg.svg" alt="Логотип разработчика сайта">
-				DIGITAL FAMILY GROUP
+			<a href="https://LIB-N-LAB.COM/" target="_blank">
+				<img src="img/icons/logo-libLab.svg" alt="Логотип разработчика сайта">
 			</a>
 		</div>
 	</div>
 </footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20221005080245"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20221005080245"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js?_v=20221005080245"></script>
-<script src="js/modules/flsWebp.js?_v=20221005080245"></script>
-<script src="js/components/menu.js?_v=20221005080245"></script>
-<script src="js/components/jquery.maskedinput.min.js?_v=20221005080245"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20230204225001"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20230204225001"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js?_v=20230204225001"></script>
+<!-- <script src="js/modules/flsWebp.js?_v=20230204225001"></script> -->
+<script src="js/components/menu.js?_v=20230204225001"></script>
+<script src="js/components/jquery.maskedinput.min.js?_v=20230204225001"></script>
 <script>
 	$(function () {
 		$("#tabs").tabs();
@@ -557,7 +617,7 @@
 		$(".phone").mask("+7(999) 999-9999");
 	});
 </script>
-<script src="js/components/modal-btn.js?_v=20221005080245"></script>
+<script src="js/components/modal-btn.js?_v=20230204225001"></script>
 </body>
 
 </html>

@@ -133,6 +133,13 @@ a:focus-visible {
   outline: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* ------------------------------ */
 
 section {
@@ -141,7 +148,8 @@ section {
 
 /* ------------------------------ */
 
-.btn {
+.btn,
+.tariffs__name {
   background: none;
   border: none;
   outline: none;
@@ -156,15 +164,18 @@ section {
   transition: all 0.3s;
 }
 
-.btn_orange {
+.btn_orange,
+.tariffs__name_orange {
   background-color: #F3B53F;
 }
 
-.btn_greyLight {
+.btn_greyLight,
+.tariffs__name_greyLight {
   background-color: #DBD9D5;
 }
 
-.btn_bee {
+.btn_bee,
+.tariffs__name_bee {
   background-color: #F4E0A1;
 }
 
@@ -500,6 +511,10 @@ input {
   margin: 10px 0 0 32px;
   margin-top: 10px;
   text-align: left;
+}
+
+.agreement a {
+  color: inherit;
 }
 
 .fancybox-bg {
@@ -1344,8 +1359,8 @@ input {
 .footer__name {
   margin-bottom: 20px;
   padding: 6px 25px 10px 10px;
-  border-top: 1px solid #DBD9D5;
-  border-bottom: 1px solid #DBD9D5;
+  border-top: 1px solid #dbd9d5;
+  border-bottom: 1px solid #dbd9d5;
 }
 
 .footer__links {
@@ -1385,15 +1400,21 @@ input {
       -ms-flex-align: center;
           align-items: center;
   color: inherit;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 108px;
+          flex: 0 0 108px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 .footer__dev a img {
-  margin: 0 15px;
-  max-width: 36px;
-  min-height: 36px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.footer__dev ::before {
+.footer__dev::before {
   content: "";
   position: absolute;
   width: 200vw;
@@ -1433,7 +1454,8 @@ input {
   }
 
   .footer a:hover {
-    color: #F3B53F;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
   }
 }
 
@@ -2162,18 +2184,7 @@ input {
 
 @media (max-width: 23.75rem) {
   .footer__dev {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     row-gap: 5px;
-  }
-
-  .footer__dev a img {
-    margin-left: 0;
   }
 }
 
