@@ -120,6 +120,15 @@ document.addEventListener('DOMContentLoaded', function () {
 		spaceBetween: 10,
 		autoHeight: true,
 		speed: 1000,
+		effect: 'creative',
+		creativeEffect: {
+		  prev: {
+			 translate: [0, 0, -400],
+		  },
+		  next: {
+			 translate: ['100%', 0, 0],
+		  },
+		},
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
