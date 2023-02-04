@@ -197,6 +197,7 @@ section {
 
 .about-us__text strong,
 .about-us__text b {
+  font-weight: inherit;
   padding: 0 2px;
   display: inline-block;
   border: 1px solid var(--white);
@@ -610,7 +611,7 @@ section {
   margin-top: -30px;
   background-color: var(--grey);
   padding-left: calc(95px + 30 * (100vw - 320px) / 1600);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--blue_dark);
 }
 
@@ -669,8 +670,10 @@ section {
   max-width: 375px;
 }
 
-.about-us__item:nth-child(4) .about-us__text strong,
-.about-us__item:nth-child(4) .about-us__text b {
+.about-us__item:nth-child(4) .about-us__text a {
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
   display: block;
   margin-top: calc(20px + 20 * (100vw - 320px) / 1600);
   border: none;
@@ -933,7 +936,6 @@ section {
   -o-transition: all 0.5s;
   transition: all 0.5s;
   position: absolute;
-  border-radius: 100%;
   background-color: var(--blue_dark);
   width: 0%;
   height: 0%;
@@ -1146,6 +1148,10 @@ section {
 
   .header__desc {
     display: none;
+  }
+
+  .about-us__item:nth-child(4) a:hover {
+    color: #e5e5e5;
   }
 
   .projects__item img {
