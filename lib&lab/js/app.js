@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		  }
 		});
 	}
+
+
 	if(window.innerWidth > 992) {
 		let colorRU = $('.links-colored_ru').css('background-color');
 		let colorEN = $('.links-colored_en').css('background-color');
@@ -63,10 +65,29 @@ document.addEventListener('DOMContentLoaded', function () {
 				$('.links-colored_en').css('background-color', colorEN);
 			}
 		});
-		$('.links-colored').mouseout(function() {
-			if (!$('.links-colored__link').hasClass('active')) {
-				$('.links-colored_ru').css('background-color', colorRU);
-				$('.links-colored_en').css('background-color', colorEN);
+		// $('.links-colored').mouseout(function() {
+		// 	if (!$('.links-colored__link').hasClass('active')) {
+		// 		$('.links-colored_ru').css('background-color', colorRU);
+		// 		$('.links-colored_en').css('background-color', colorEN);
+		// 	}
+		// });
+	}
+
+	//------------------------form animation input----------------------------
+
+	if (document.querySelector('.form__input')) {
+		document.querySelectorAll('.form__input').forEach(e => {
+			if(e.previousElementSibling) {
+				e.addEventListener('click', (elem) => {
+					if (elem.target) {
+						document.querySelectorAll('.form__input').forEach(element => {
+							if (element.value == '') {
+								element.previousElementSibling.classList.remove('input_active');
+							}
+						});
+						e.previousElementSibling.classList.add('input_active');
+					}
+				});
 			}
 		});
 	}
@@ -125,4 +146,37 @@ document.addEventListener('DOMContentLoaded', function () {
 			let phoneMask = IMask(el, { mask: '+{7}(000)-000-00-00' });
 		})
 	}
+
+	//------------------------switching ru|en----------------------------
+
+	const selectLang = document.querySelector('.header__language');
+	const allLang = ['en', 'ru'];
+	
+	// перенаправить на url с указанием языка
+	selectLang.addEventListener('click', (e) => {
+		let lang = e.target.innerHTML;
+		location.href = window.location.pathname + '#' + lang.toLowerCase();
+		location.reload();
+	});
+	
+	function changeLanguage() {
+		let hash = window.location.hash;
+		hash = hash.substring(1);
+	
+		if (!allLang.includes(hash)) {
+			location.href = window.location.pathname + '#ru';
+			location.reload();
+		}
+
+		for (let key in languages) {
+			let elem = document.querySelectorAll('.lng-' + key);
+			if (elem && languages[key][hash] !== undefined) {
+				elem.forEach(e => {
+					e.innerHTML = languages[key][hash];
+				});
+			}
+		}
+	}
+	
+	changeLanguage();
 });

@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230126200036" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230126200036">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230204191009" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230204191009">
 
 	<link rel="alternate icon" class="js-site-favicon" type="image/png" href="img/favicon.png">
 	<link rel="icon" class="js-site-favicon" type="image/svg+xml" href="img/favicon.svg">
@@ -27,10 +27,18 @@
 				<div class="header__menu menu nav-js" data-active="false">
 					<nav>
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#aboutUs" class="hov-link-line">О нас</a></li>
-							<li class="menu__item"><a href="#services" class="hov-link-line">Услуги</a></li>
-							<li class="menu__item"><a href="#projects" class="hov-link-line">Проекты</a></li>
-							<li class="menu__item"><a href="#footer" class="hov-link-line">Контакты</a></li>
+							<li class="menu__item">
+								<a href="#aboutUs" class="hov-link-line lng-aboutUs">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="#services" class="hov-link-line lng-services">Услуги</a>
+							</li>
+							<li class="menu__item">
+								<a href="#projects" class="hov-link-line lng-projects">Проекты</a>
+							</li>
+							<li class="menu__item">
+								<a href="#footer" class="hov-link-line lng-contacts">Контакты</a>
+							</li>
 						</ul>
 					</nav>
 					<div class="header__desc">
@@ -39,8 +47,8 @@
 					</div>
 				</div>
 				<div class="header__language links-colored">
-					<a href="#" class="links-colored__link links-colored_ru">RU</a>
-					<a href="#" class="links-colored__link links-colored_en">EN</a>
+					<div class="links-colored__link links-colored_ru">RU</div>
+					<div class="links-colored__link links-colored_en">EN</div>
 				</div>
 			</div>
 			<button class="header__button nav-btn-js" type="button" data-open='false'></button>
@@ -52,50 +60,52 @@
 				<div class="about-us__container">
 					<div class="about-us__wrapper">
 						<div class="about-us__item">
-							<div class="about-us__title title">О НАС<span></span></div>
-							<div class="about-us__text">
-								Предприниматели – <span class="text-border">наши супергерои!</span> Но даже они встречаются с
+							<div class="about-us__title title lng-aboutUsTitle">О НАС<span></span></div>
+							<div class="about-us__text lng-partners">
+								Предприниматели – <strong>наши супергерои!</strong> Но даже они встречаются с
 								трудностями в цифровом
 								мире.
 								Мы же телепортируем проекты своих настоящихи будущих друзей в цифру.
 							</div>
 						</div>
 						<div class="about-us__item">
-							<div class="about-us__text">
+							<div class="about-us__text lng-weDo">
 								Что делаем:
 								<ul>
 									<li>аналитика и концепт IT-продуктов</li>
-									<li><span class="text-border">разработка IT-продуктов любой сложности</span></li>
+									<li><strong>разработка IT-продуктов любой сложности</strong></li>
 									<li>стратегия бренда и маркетинговая стратегия</li>
-									<li>айдентика, пользовательский опыт (UX), пользовательский интерфейс (UI)</li>
+									<li>айдентика</li>
+									<li>пользовательский опыт (UX)</li>
+									<li>пользовательский интерфейс (UI)</li>
 								</ul>
 							</div>
 						</div>
 						<div class="about-us__item">
-							<div class="about-us__title">
+							<div class="about-us__title lng-processes">
 								НАШИ ПРОЦЕССЫ
 								<br>
 								интервью → исследование → образ решения →
 								аналитика и проектирование → разработка →
 								запуск → сопровождение
 							</div>
-							<div class="about-us__text">
+							<div class="about-us__text lng-strategy">
 								Мы вовлекаем клиента в рабочий процесс и
-								фокусируемся на <span class="text-border">стратегических</span> и бизнес-целях,
+								фокусируемся на <b>стратегических</b> и бизнес-целях,
 								а не на личных вкусах и тенденциях.
 							</div>
-							<div class="about-us__desc">ПРОЦЕССЫ</div>
+							<div class="about-us__desc lng-processesInscription">ПРОЦЕССЫ</div>
 						</div>
 						<div class="about-us__item">
 							<div class="about-us__title">
 								<img src="img/logo/logo-pako.svg" alt="logo-pako">
 							</div>
-							<div class="about-us__text">
+							<div class="about-us__text lng-management">
 								Управление данными и отзывами на картах, в справочниках и социальных сетях из единого кабинета.
 
-								<span>Pako 2022 ©</span>
+								<strong>Pako 2022 ©</strong>
 							</div>
-							<div class="about-us__desc">ПРОДУКТЫ</div>
+							<div class="about-us__desc lng-productsInscription">ПРОДУКТЫ</div>
 						</div>
 					</div>
 				</div>
@@ -103,31 +113,31 @@
 			<section class="services" id="services">
 				<div class="services__container">
 					<div class="services__wrapper">
-						<h2 class="services__title title">УСЛУГИ<span></span></h2>
+						<h2 class="services__title title lng-servicesTitle">УСЛУГИ<span></span></h2>
 						<div class="services__sliders">
 							<div class="sliders__wrapper">
 								<div class="swiper-container slider1">
 									<div class="swiper-wrapper">
-										<div class="slider1__slide swiper-slide">Интернет-маркетинг</div>
-										<div class="slider1__slide swiper-slide">R&D IT-продуктов</div>
-										<div class="slider1__slide swiper-slide">Разработка платформ</div>
-										<div class="slider1__slide swiper-slide">Проектный офис</div>
-										<div class="slider1__slide swiper-slide">Консалтинг в IT</div>
-										<div class="slider1__slide swiper-slide">Исследования/Аналитика</div>
+										<div class="slider1__slide swiper-slide lng-marketing">Интернет-маркетинг</div>
+										<div class="slider1__slide swiper-slide lng-ITproducts">R&D IT-продуктов</div>
+										<div class="slider1__slide swiper-slide lng-development">Разработка платформ</div>
+										<div class="slider1__slide swiper-slide lng-project">Проектный офис</div>
+										<div class="slider1__slide swiper-slide lng-consulting">Консалтинг в IT</div>
+										<div class="slider1__slide swiper-slide lng-analitics">Исследования/Аналитика</div>
 									</div>
 								</div>
 								<div thumbsSlider class="swiper-container slider2">
 									<div class="swiper-wrapper">
 										<div class="slider2__slide swiper-slide">
 											<div class="slider2__header">
-												<div class="slider2__title">Интернет-маркетинг</div>
+												<div class="slider2__title lng-marketing">Интернет-маркетинг</div>
 												<div class="slider2__desc">
 													<a class="hov-link-line" href="tel:+79110000000">+7 (911) 000-00-00</a>
 													<a class="hov-link-line" href="mailto:info@.tech">info@.tech</a>
 												</div>
 											</div>
 											<div class="slider2__content">
-												<div class="slider2__text">
+												<div class="slider2__text lng-marketingContent">
 													Эффективное продвижение Ваших товаров или услуг онлайн.
 													Настройка и ведение как локальных, так и масштабных кампаний продвижения.
 													Перманентное отслеживание активностей Ваших клиентов на всем пути: от первого
@@ -136,19 +146,19 @@
 													marketing) ⚬ SEO-продвижение ⚬ email-маркетинг ⚬ веб-аналитика ⚬
 													контент-маркетинг.
 												</div>
-												<a href="#contacts" class="slider2__btn"><span>Обсудим?</span></a>
+												<a href="#contacts" class="slider2__btn lng-servicesBtn"><b>Обсудим?</b></a>
 											</div>
 										</div>
 										<div class="slider2__slide swiper-slide">
 											<div class="slider2__header">
-												<div class="slider2__title">R&D IT-продуктов</div>
+												<div class="slider2__title lng-ITproducts">R&D IT-продуктов</div>
 												<div class="slider2__desc">
 													<a class="hov-link-line" href="tel:+79110000000">+7 (911) 000-00-00</a>
 													<a class="hov-link-line" href="mailto:info@.tech">info@.tech</a>
 												</div>
 											</div>
 											<div class="slider2__content">
-												<div class="slider2__text">
+												<div class="slider2__text lng-ITproductsContent">
 													Проводим глубокие исследования в области современных и перспективных технологий,
 													технологических разрывов в IT-продуктах, предлагаем технически обоснованные
 													решения. Можем создать Ваш продукт “под ключ” от технической аналитики,
@@ -157,19 +167,19 @@
 													научно-исследовательские лаборатории и полигоны, где Вы сможете разрабатывать
 													вашу технологию. А мы Вас сопроводим в этом пути в формате проектного офиса!
 												</div>
-												<a href="#contacts" class="slider2__btn"><span>Обсудим?</span></a>
+												<a href="#contacts" class="slider2__btn lng-servicesBtn"><b>Обсудим?</b></a>
 											</div>
 										</div>
 										<div class="slider2__slide swiper-slide">
 											<div class="slider2__header">
-												<div class="slider2__title">Разработка платформ</div>
+												<div class="slider2__title lng-development">Разработка платформ</div>
 												<div class="slider2__desc">
 													<a class="hov-link-line" href="tel:+79110000000">+7 (911) 000-00-00</a>
 													<a class="hov-link-line" href="mailto:info@.tech">info@.tech</a>
 												</div>
 											</div>
 											<div class="slider2__content">
-												<div class="slider2__text">
+												<div class="slider2__text lng-developmentContent">
 													Используем самые современные инструменты и гибкий подход в работе для создания
 													сайтов и платформ любой сложности. Проанализируем Вашу идею и укажем на слабые
 													места, сильные подчеркнем. Работаем по следующему алгоритму: Интервью → Аналитика
@@ -177,19 +187,19 @@
 													программирование → Обучение Заказчика. Дополнительно возможно сопровождение и
 													техническое обслуживание Вашего ресурса.
 												</div>
-												<a href="#contacts" class="slider2__btn"><span>Обсудим?</span></a>
+												<a href="#contacts" class="slider2__btn lng-servicesBtn"><b>Обсудим?</b></a>
 											</div>
 										</div>
 										<div class="slider2__slide swiper-slide">
 											<div class="slider2__header">
-												<div class="slider2__title">Проектный офис</div>
+												<div class="slider2__title lng-project">Проектный офис</div>
 												<div class="slider2__desc">
 													<a class="hov-link-line" href="tel:+79110000000">+7 (911) 000-00-00</a>
 													<a class="hov-link-line" href="mailto:info@.tech">info@.tech</a>
 												</div>
 											</div>
 											<div class="slider2__content">
-												<div class="slider2__text">
+												<div class="slider2__text lng-projectContent">
 													Централизуем и структурируем управление цифровыми проектами в организации.
 													Вынесем все хлопоты и заботы по проекту за пределы Вашей компании. Работа в
 													соответствии с передовыми проектными фреймворками, грамотная приоритезация задач,
@@ -197,44 +207,44 @@
 													рамках данной модели. Дополнительно Вы сможете минимизировать риски, связанные с
 													непомерным раздуванием штата и увеличением бюджетов цифровых проектов.
 												</div>
-												<a href="#contacts" class="slider2__btn"><span>Обсудим?</span></a>
+												<a href="#contacts" class="slider2__btn lng-servicesBtn"><b>Обсудим?</b></a>
 											</div>
 										</div>
 										<div class="slider2__slide swiper-slide">
 											<div class="slider2__header">
-												<div class="slider2__title">Консалтинг в IT</div>
+												<div class="slider2__title lng-consulting">Консалтинг в IT</div>
 												<div class="slider2__desc">
 													<a class="hov-link-line" href="tel:+79110000000">+7 (911) 000-00-00</a>
 													<a class="hov-link-line" href="mailto:info@.tech">info@.tech</a>
 												</div>
 											</div>
 											<div class="slider2__content">
-												<div class="slider2__text">
+												<div class="slider2__text lng-consultingContent">
 													Если у Вас есть вопросы по цифровизации вашего продукта и/или Бизнеса, а также
 													как не пропустить волну цифровой экономики мы с удовольствием ответим на них.
 													Сквозные технологии, такие как: Интернет Вещей, технологии Искусственного
 													Интеллекта, блокчейн и другие, уже здесь и сейчас меняют модели и принципы работы
 													бизнеса, формируют новые социальные и экономические концепции.
 												</div>
-												<a href="#contacts" class="slider2__btn"><span>Обсудим?</span></a>
+												<a href="#contacts" class="slider2__btn lng-servicesBtn"><b>Обсудим?</b></a>
 											</div>
 										</div>
 										<div class="slider2__slide swiper-slide">
 											<div class="slider2__header">
-												<div class="slider2__title">Исследования/Аналитика</div>
+												<div class="slider2__title lng-analitics">Исследования/Аналитика</div>
 												<div class="slider2__desc">
 													<a class="hov-link-line" href="tel:+79110000000">+7 (911) 000-00-00</a>
 													<a class="hov-link-line" href="mailto:info@.tech">info@.tech</a>
 												</div>
 											</div>
 											<div class="slider2__content">
-												<div class="slider2__text">
+												<div class="slider2__text lng-analiticsContent">
 													Проводим продуктовые, бизнес и рыночные исследования в IT. Работаем в формате как
 													открытых кабинетных исследований на основе доступной информации, так и в формате
 													закрытых интервью и опросов. Делаем обоснованные выводы и рекомендации,
 													используем методы эффективного анализа больших данных.
 												</div>
-												<a href="#contacts" class="slider2__btn"><span>Обсудим?</span></a>
+												<a href="#contacts" class="slider2__btn lng-servicesBtn"><b>Обсудим?</b></a>
 											</div>
 										</div>
 									</div>
@@ -255,7 +265,7 @@
 			<section class="projects" id="projects">
 				<div class="projects__container">
 					<div class="projects__wrapper">
-						<h2 class="projects__title title">ПРОЕКТЫ<span></span></h2>
+						<h2 class="projects__title title lng-projectsTitle">ПРОЕКТЫ<span></span></h2>
 						<div class="projects__items">
 							<a href="https://masterplace.spb.ru/" class="projects__item projects__item_short">
 								<picture><source srcset="img/projects/masterPlace.webp" type="image/webp"><img src="img/projects/masterPlace.jpg" alt="masterPlace"></picture>
@@ -279,7 +289,7 @@
 								<picture><source srcset="img/projects/aphko.webp" type="image/webp"><img src="img/projects/aphko.jpg" alt="aphko"></picture>
 							</a>
 							<a href="#" class="projects__item projects__item_short projects__add-project">
-								<span>ВАШ ПРОЕКТ__</span>
+								<span class="lng-yourProject">ВАШ ПРОЕКТ__</span>
 							</a>
 						</div>
 					</div>
@@ -288,26 +298,38 @@
 			<section class="contacts" id="contacts">
 				<div class="contacts__container">
 					<div class="contacts__wrapper">
-						<h2 class="contacts__title title">КОНТАКТЫ<span></span></h2>
+						<h2 class="contacts__title title lng-contactsTitle">КОНТАКТЫ<span></span></h2>
 						<div class="contacts__content">
 							<div class="contacts__info">
-								<div class="contacts__text">
+								<div class="contacts__text lng-consultation">
 									Свяжитесь
 									<br>
 									с нами и получите консультацию
 								</div>
-								<div class="contacts__desc">
+								<div class="contacts__desc lng-agreement">
 									Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a> и
 									соглашаетесь c <a href="#">политикой конфиденциальности</a>
 								</div>
 							</div>
 							<div class="contacts__form">
 								<form class="form" action="">
-									<div class="form__title">свяжитесь с нами</div>
-									<input class="form__input" type="text" placeholder="компания">
-									<input class="form__input phone-mask" type="text" placeholder="телефон">
-									<input class="form__input" type="text" placeholder="email">
-									<input class="form__btn" type="submit" value="отправить">
+									<div class="form__title lng-formTitle">свяжитесь с нами</div>
+									<div class="form__item">
+										<label for="" class="form__label lng-formCompany">компания</label>
+										<input class="form__input" type="text">
+									</div>
+									<div class="form__item">
+										<label for="" class="form__label lng-formPhone">телефон</label>
+										<input class="form__input phone-mask" type="text">
+									</div>
+									<div class="form__item">
+										<label for="" class="form__label">email</label>
+										<input class="form__input" type="text">
+									</div>
+									<div class="form__item">
+										<label for="" class="form__label lng-formBtn">отправить</label>
+										<input class="form__btn" type="submit" value="">
+									</div>
 								</form>
 							</div>
 						</div>
@@ -322,7 +344,7 @@
 				<div class="footer__logo">
 					<img src="img/logo/logo.svg" alt="logo">
 				</div>
-				<div class="footer__desc">
+				<div class="footer__desc lng-digitalWorld">
 					Телепортируем проекты своих
 					настоящих и будущих друзей в цифру
 				</div>
@@ -330,16 +352,16 @@
 			<div class="footer__content">
 				<ul class="footer__links">
 					<li class="footer__link">
-						<a href="#aboutUs" class="hov-link-line_grey">О нас </a>
+						<a href="#aboutUs" class="hov-link-line_grey lng-aboutUs">О нас </a>
 					</li>
 					<li class="footer__link">
-						<a href="#services" class="hov-link-line_grey">Услуги</a>
+						<a href="#services" class="hov-link-line_grey lng-services">Услуги</a>
 					</li>
 					<li class="footer__link">
-						<a href="#projects" class="hov-link-line_grey">Проекты</a>
+						<a href="#projects" class="hov-link-line_grey lng-projects">Проекты</a>
 					</li>
 					<li class="footer__link">
-						<a href="#footer" class="hov-link-line_grey">Контакты</a>
+						<a href="#footer" class="hov-link-line_grey lng-contacts">Контакты</a>
 					</li>
 				</ul>
 				<div class="footer__reserved">
@@ -349,16 +371,17 @@
 			</div>
 			<div class="footer__info">
 				<div class="footer__contacts">
-					<h3 class="footer__title">КОНТАКТЫ</h3>
+					<h3 class="footer__title lng-contacts">КОНТАКТЫ</h3>
 					<div class="footer__contact">
 						<a href="tel:88008888" class="hov-link-line_grey">8 800 88 88</a> | <a href="#"
 							class="hov-link-line_grey">info@</a>
 					</div>
 					<div class="footer__contact">
-						<span>Техническая поддержка: </span><a href="#" class="hov-link-line_grey">support@</a>
+						<span class="lng-support">Техническая поддержка: </span><a href="#"
+							class="hov-link-line_grey">support@</a>
 					</div>
 				</div>
-				<a href="#" class="footer__policy hov-link-line_grey">
+				<a href="#" class="footer__policy hov-link-line_grey lng-policy">
 					Политика в отношении обработки персональных данных
 				</a>
 			</div>
@@ -366,14 +389,15 @@
 	</div>
 </footer>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230126200036"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230126200036"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230204191009"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230204191009"></script>
 
-<script type="text/javascript" src="https://csartel.ru/wp-content/themes/theme/js/imask.js?ver=6.0.3&_v=20230126200036"
+<script type="text/javascript" src="https://csartel.ru/wp-content/themes/theme/js/imask.js?ver=6.0.3&_v=20230204191009"
 	id="imask-js"></script>
 
-<script type="text/javascript" src="js/revealer.js?_v=20230126200036"></script>
-<script type="text/javascript" src="js/app.js?_v=20230126200036"></script>
+<script type="text/javascript" src="js/revealer.js?_v=20230204191009"></script>
+<script type="text/javascript" src="js/languages.js?_v=20230204191009"></script>
+<script type="text/javascript" src="js/app.js?_v=20230204191009"></script>
 </body>
 
 </html>

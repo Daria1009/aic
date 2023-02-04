@@ -142,6 +142,11 @@ section {
   padding-top: 134px;
 }
 
+*::after,
+*::before {
+  pointer-events: none;
+}
+
 /*---------------------------------------*/
 
 [class*=hov-link-line] {
@@ -190,7 +195,8 @@ section {
   height: 1px;
 }
 
-.text-border {
+.about-us__text strong,
+.about-us__text b {
   padding: 0 2px;
   display: inline-block;
   border: 1px solid var(--white);
@@ -234,11 +240,6 @@ section {
 .form::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.form::after {
   top: -20px;
   left: -30px;
   height: 120%;
@@ -262,36 +263,58 @@ section {
 
 .form input {
   padding: 25px 40px;
-  font-size: 1rem;
+  font-size: inherit;
 }
 
 .form input:not(.form__btn) {
   color: var(--black);
 }
 
-.form input:not(.form__btn)::-webkit-input-placeholder {
-  color: var(--grey_dark);
+.form__item {
+  width: 100%;
+  position: relative;
+  font-size: 1rem;
 }
 
-.form input:not(.form__btn)::-moz-placeholder {
-  color: var(--grey_dark);
+.form__item:last-child .form__label {
+  color: var(--white);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.form input:not(.form__btn):-ms-input-placeholder {
+.form__label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   color: var(--grey_dark);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
 }
 
-.form input:not(.form__btn)::-ms-input-placeholder {
-  color: var(--grey_dark);
-}
-
-.form input:not(.form__btn)::placeholder {
-  color: var(--grey_dark);
+.form__label.input_active {
+  font-size: 0.75rem;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  top: 10px;
+  left: 30px;
 }
 
 .form__input {
+  width: 100%;
   background-color: var(--grey_color);
   color: var(--grey_dark);
+}
+
+.form__input:focus {
+  outline: var(--blue_dark);
 }
 
 .form__btn {
@@ -301,6 +324,7 @@ section {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+  width: 100%;
 }
 
 .links-colored {
@@ -320,6 +344,9 @@ section {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
 }
 
 .links-colored__link:first-child {
@@ -467,10 +494,12 @@ section {
   display: -ms-grid;
   display: grid;
   gap: 18px;
-  grid-auto-rows: minmax(100px, auto);
+  -ms-grid-columns: 1.24fr 18px 1fr;
+  grid-template-columns: 1.24fr 1fr;
   background-color: var(--white);
   position: relative;
-      grid-template-areas: "a a a b b" "c c c b b" "c c c d d";
+  -ms-grid-rows: auto 18px auto 18px auto;
+      grid-template-areas: "a b" "c b" "c d";
 }
 
 .about-us__wrapper ul {
@@ -540,12 +569,11 @@ section {
 .about-us__item:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
+  grid-area: a;
   overflow: hidden;
   margin-right: -90px;
   padding: 25px 85px 0 40px;
   padding-bottom: calc(30px + 50 * (100vw - 320px) / 1600);
-  grid-area: a;
   background-color: #3c3838;
   color: var(--white);
   font-weight: 400;
@@ -577,17 +605,17 @@ section {
 .about-us__item:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 3;
-  margin-top: -30px;
+  -ms-grid-column: 3;
   grid-area: b;
+  margin-top: -30px;
   background-color: var(--grey);
   padding-left: calc(95px + 30 * (100vw - 320px) / 1600);
   font-weight: 600;
   color: var(--blue_dark);
 }
 
-.about-us__item:nth-child(2) .text-border {
+.about-us__item:nth-child(2) strong,
+.about-us__item:nth-child(2) b {
   border-color: #000;
 }
 
@@ -595,7 +623,6 @@ section {
   -ms-grid-row: 3;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
   grid-area: c;
   background-color: var(--blue_dark);
   color: var(--white);
@@ -621,10 +648,9 @@ section {
 
 .about-us__item:nth-child(4) {
   -ms-grid-row: 5;
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 3;
-  margin: 0px 45px -30px -85px;
+  -ms-grid-column: 3;
   grid-area: d;
+  margin: 0px 35px -30px -85px;
   background-color: var(--orange);
   padding-top: calc(30px + 85 * (100vw - 320px) / 1600);
   padding-bottom: calc(30px + 42 * (100vw - 320px) / 1600);
@@ -643,9 +669,11 @@ section {
   max-width: 375px;
 }
 
-.about-us__item:nth-child(4) .about-us__text span {
+.about-us__item:nth-child(4) .about-us__text strong,
+.about-us__item:nth-child(4) .about-us__text b {
   display: block;
   margin-top: calc(20px + 20 * (100vw - 320px) / 1600);
+  border: none;
 }
 
 .about-us__item:nth-child(4) .about-us__desc {
@@ -659,8 +687,8 @@ section {
   mix-blend-mode: multiply;
   top: -55px;
   background-color: rgba(214, 107, 0, 0.92);
-  width: 124px;
-  right: -61px;
+  width: 105px;
+  right: -46px;
 }
 
 .services__wrapper {
@@ -749,6 +777,7 @@ section {
   padding: 20px;
   background-color: var(--grey);
   font-size: 2rem;
+  text-align: center;
 }
 
 .services .slider2__desc {
@@ -889,6 +918,7 @@ section {
   font-size: 2rem;
   font-weight: 700;
   line-height: 125.02%;
+  text-transform: uppercase;
 }
 
 .projects__add-project span {
@@ -1127,6 +1157,15 @@ section {
 
   .about-us__item:nth-child(3) {
     padding-left: 40px;
+  }
+
+  .about-us__item:nth-child(4) {
+    margin-right: 15px;
+  }
+
+  .about-us__item:nth-child(4)::after {
+    width: 90px;
+    right: -30px;
   }
 }
 
@@ -1384,15 +1423,15 @@ section {
 
   .about-us__item:nth-child(4) {
     margin: 0;
-    margin-right: 40px;
+    margin-right: 25px;
     padding-left: 25px;
     border-radius: 0 22px 22px 0;
   }
 
   .about-us__item:nth-child(4)::after {
     top: -40px;
-    width: 90px;
-    right: -40px;
+    width: 70px;
+    right: -25px;
     height: 100%;
   }
 
@@ -1657,9 +1696,17 @@ section {
     margin-bottom: 5px;
   }
 
-  .form input {
-    padding: 12px 30px;
+  .form__item {
     font-size: 0.875rem;
+  }
+
+  .form input {
+    padding: 20px 30px;
+  }
+
+  .form__label.input_active {
+    top: 5px;
+    left: 25px;
   }
 
   .form__btn {
