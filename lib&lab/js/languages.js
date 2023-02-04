@@ -77,10 +77,10 @@ const languages = {
 	"management": {
 		"ru": `Управление данными и отзывами на картах, в справочниках и социальных сетях из единого кабинета. 
 		
-		<strong>Pako 2022 ©</strong>`,
+		<a href="https://pako.tech/" target="_blank">Pako 2022 ©</a>`,
 		"en": `Manage data and reviews on maps, in directories and social networks from a single cabinet.
 		
-		<strong>Pako 2022 ©</strong>`,
+		<a href="https://pako.tech/" target="_blank">Pako 2022 ©</a>`,
 	},
 	"servicesBtn": {
 		"ru": `<b>Обсудим?</b>`,
