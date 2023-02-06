@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20230204225001">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230204225001">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20230206214419">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230206214419">
 	<link rel="apple-touch-icon" href="img/icons/favicon.svg">
 	<link type="image/svg+xml" href="img/icons/favicon.svg" rel="icon">
 
@@ -19,7 +19,7 @@
 		<header class="header">
 	<div class="header__container">
 		<div class="header__wrapper">
-			<a href="#" class="header__logo" aria-label="Возврашение в начало страницы">
+			<a href="index.html" class="header__logo" aria-label="Возврашение в начало страницы">
 				<img src="img/logo-blue.svg" alt="Логотип Pako">
 			</a>
 			<div class="header__content">
@@ -29,7 +29,7 @@
 						<li class="menu__item"><a href="#selling">Почему это важно</a></li>
 						<li class="menu__item"><a href="#tariffs">Тарифы</a></li>
 						<li class="menu__item"><a href="#about">О нас</a></li>
-						<li class="menu__item"><a href="#">Блог</a></li>
+						<li class="menu__item"><a href="blog.html">Блог</a></li>
 						<li class="menu__item menu__phone"><a href="tel:+780088880">+7 800 888 80</a></li>
 					</ul>
 				</nav>
@@ -244,15 +244,14 @@
 					<h3 class="border tariffs__name">МИНИМУМ</h3>
 					<div class="tariffs__text">
 						<ul>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
+							<li>3 рабочих места</li>
+							<li>Модуль управления филиалами</li>
+							<li>XML загрузка данных о филиалах</li>
+							<li>Мониторинг дублей: разово</li>
+							<li>Автоматические ответы</li>
+							<li>Модуль новостей / публицаций</li>
+							<li>Модуль фотографий</li>
+							<li>Модуль статистики</li>
 						</ul>
 					</div>
 					<a href="#modal-tariffs" data-fancybox class="btn btn_orange border">запросить расчет</a>
@@ -263,15 +262,18 @@
 					</h3>
 					<div class="tariffs__text">
 						<ul>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
+							<li>10 рабочих мест</li>
+							<li>Модуль управления филиалами</li>
+							<li>XML загрузка данных о филиалах</li>
+							<li>Помощь в оптимизации карточек филиалов</li>
+							<li>Мониторинг дублей: раз в 6 мес.</li>
+							<li>Автоматические ответы</li>
+							<li>Сравнение с 2 конкурентами по отзывам</li>
+							<li>Модуль новостей / публицаций</li>
+							<li>Модуль фотографий</li>
+							<li>Модуль статистики</li>
+							<li>Расширенная аналитика</li>
+							<li>Личный менеджер</li>
 						</ul>
 					</div>
 					<a href="#modal-tariffs" data-fancybox class="btn btn_orange border">запросить расчет</a>
@@ -280,15 +282,19 @@
 					<h3 class="tariffs__name_bee border tariffs__name">премиум</h3>
 					<div class="tariffs__text">
 						<ul>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
-							<li>текст</li>
+							<li>25 рабочих мест</li>
+							<li>Модуль управления филиалами</li>
+							<li>XML загрузка данных о филиалах</li>
+							<li>Помощь в оптимизации карточек филиалов</li>
+							<li>Мониторинг дублей: раз в 3 мес.</li>
+							<li>Автоматические ответы</li>
+							<li>Сравнение с 5 конкурентами по отзывам</li>
+							<li>Модуль новостей / публицаций</li>
+							<li>Модуль фотографий</li>
+							<li>Модуль статистики</li>
+							<li>Расширенная аналитика</li>
+							<li>Личный менеджер</li>
+							<li>Помощь в создании графического контента</li>
 						</ul>
 					</div>
 					<a href="#modal-tariffs" data-fancybox class="btn btn_orange border">запросить расчет</a>
@@ -351,212 +357,211 @@
 			</section>
 			<!-- Модальные окна -->
 			<div id="modal-demo" class="modal">
-				<div class="modal__wrapper">
-					<div class="modal__content">
-						<div class="modal__agreement">
-							<div class="modal__img">
-								<img src="img/modal/logo.svg" alt="Логотип Pako">
-							</div>
-							<ul class="modal__list">
-								<li class="modal__item">Наши специалисты проведут предварительный анализ присутствия Вашей
-									компании в геосерсисах и
-									подготовят отчет (for free, естественно).
-								</li>
-								<li class="modal__item">Вы познакомитесь с платформой pako изнутри и узнаете о всех
-									возможностях
-									для Вашего бизнеса.
-								</li>
-							</ul>
-						</div>
-						<form action="" class="form">
-							<fieldset class="form__wrapper">
-								<legend class="form__subtitle border">ЗАПОЛНИТЕ ФОРМУ</legend>
-								<ul class="form__list">
-									<li class="form__item">
-										<label for="company">компания</label>
-										<input type="text" placeholder="компания">
-									</li>
-									<li class="form__item">
-										<label for="phone">Телефон</label>
-										<input class="phone" name="phone" type="text" placeholder="Телефон" />
-									</li>
-									<li class="form__item">
-										<label for="mail">Электронная почта</label>
-										<input type="text" name="mail" placeholder="email" />
-									</li>
-									<li class="form__btn">
-										<input type="submit" form="form" class="btn btn_orange border" value="Отправить">
-									</li>
-								</ul>
-							</fieldset>
-							<div class="agreement">
-								Нажимая кнопку, я принимаю соглашение об <a href="#">обработке персональных данных</a>
-							</div>
-						</form>
-					</div>
-					<di class="modal__bg">
-						<img src="img/modal/bg.svg" alt="Фоновая картинка">
-					</di>
+	<div class="modal__wrapper">
+		<div class="modal__content">
+			<div class="modal__agreement">
+				<div class="modal__img">
+					<img src="img/modal/logo.svg" alt="Логотип Pako">
 				</div>
+				<ul class="modal__list">
+					<li class="modal__item">Наши специалисты проведут предварительный анализ присутствия Вашей
+						компании в геосерсисах и
+						подготовят отчет (for free, естественно).
+					</li>
+					<li class="modal__item">Вы познакомитесь с платформой pako изнутри и узнаете о всех
+						возможностях
+						для Вашего бизнеса.
+					</li>
+				</ul>
 			</div>
+			<form action="" class="form">
+				<fieldset class="form__wrapper">
+					<legend class="form__subtitle border">ЗАПОЛНИТЕ ФОРМУ</legend>
+					<ul class="form__list">
+						<li class="form__item">
+							<label for="company">компания</label>
+							<input type="text" placeholder="компания">
+						</li>
+						<li class="form__item">
+							<label for="phone">Телефон</label>
+							<input class="phone" name="phone" type="text" placeholder="Телефон" />
+						</li>
+						<li class="form__item">
+							<label for="mail">Электронная почта</label>
+							<input type="text" name="mail" placeholder="email" />
+						</li>
+						<li class="form__btn">
+							<input type="submit" form="form" class="btn btn_orange border" value="Отправить">
+						</li>
+					</ul>
+				</fieldset>
+				<div class="agreement">
+					Нажимая кнопку, я принимаю соглашение об <a href="#">обработке персональных данных</a>
+				</div>
+			</form>
+		</div>
+		<di class="modal__bg">
+			<img src="img/modal/bg.svg" alt="Фоновая картинка">
+		</di>
+	</div>
+</div>
 			<div id="modal-entrance" class="modal modal-entrance">
-				<div class="modal__wrapper entrance">
-					<div class="modal__content">
-						<div class="modal__agreement">
-							<div class="modal__img">
-								<img src="img/modal/logo-text.svg" alt="Логотип Pako">
-							</div>
-						</div>
-						<form action="" class="form">
-							<fieldset class="form__wrapper">
-								<legend class="form__subtitle border">ВХОД В СИСТЕМУ</legend>
-								<ul class="form__list">
-									<li class="form__item">
-										<label for="mail">Электронная почта</label>
-										<input type="text" name="mail" placeholder="email" />
-									</li>
-									<li class="form__item">
-										<label for="company">пароль</label>
-										<input type="text" placeholder="пароль*">
-									</li>
-									<li class="form__item form__remember">
-										<div>
-											<input type="checkbox" class="custom-checkbox" id="remember" name="remember"
-												value="remember">
-											<label for="remember">Запомнить меня</label>
-										</div>
-										<a href="#">Забыли пароль?</a>
-									</li>
-									<li class="form__btn">
-										<button type="button" class="btn border form__link open-reg">демо аккаунт</button>
-										<input type="submit" form="form" class="btn btn_orange border" value="войти">
-									</li>
-								</ul>
-							</fieldset>
-						</form>
-					</div>
-					<di class="modal__bg">
-						<img src="img/modal/bg-2.svg" alt="Фоновая картинка">
-					</di>
-				</div>
-				<div class="modal__wrapper demo hidden">
-					<div class="modal__content">
-						<div class="modal__agreement">
-							<div class="modal__img">
-								<img src="img/modal/logo.svg" alt="Логотип Pako">
-							</div>
-							<ul class="modal__list">
-								<li class="modal__item">Наши специалисты проведут предварительный анализ присутствия Вашей
-									компании в геосерсисах и
-									подготовят отчет (for free, естественно).
-								</li>
-								<li class="modal__item">Вы познакомитесь с платформой pako изнутри и узнаете о всех
-									возможностях
-									для Вашего бизнеса.
-								</li>
-							</ul>
-						</div>
-						<form action="" class="form">
-							<fieldset class="form__wrapper">
-								<legend class="form__subtitle border">ЗАПОЛНИТЕ ФОРМУ</legend>
-								<ul class="form__list">
-									<li class="form__item">
-										<label for="company">компания</label>
-										<input type="text" placeholder="компания">
-									</li>
-									<li class="form__item">
-										<label for="phone">Телефон</label>
-										<input class="phone" name="phone" type="text" placeholder="Телефон" />
-									</li>
-									<li class="form__item">
-										<label for="mail">Электронная почта</label>
-										<input type="text" name="mail" placeholder="email" />
-									</li>
-									<li class="form__btn">
-										<input type="submit" form="form" class="btn btn_orange border" value="Отправить">
-									</li>
-									<li class="form__btn">
-										<button type="button" class="back">Уже есть аккаунт? Войти</button>
-									</li>
-								</ul>
-							</fieldset>
-							<div class="agreement">
-								Нажимая кнопку, я принимаю соглашение об <a href="#">обработке персональных данных</a>
-							</div>
-						</form>
-					</div>
-					<di class="modal__bg">
-						<img src="img/modal/bg.svg" alt="Фоновая картинка">
-					</di>
+	<div class="modal__wrapper entrance">
+		<div class="modal__content">
+			<div class="modal__agreement">
+				<div class="modal__img">
+					<img src="img/modal/logo-text.svg" alt="Логотип Pako">
 				</div>
 			</div>
+			<form action="" class="form">
+				<fieldset class="form__wrapper">
+					<legend class="form__subtitle border">ВХОД В СИСТЕМУ</legend>
+					<ul class="form__list">
+						<li class="form__item">
+							<label for="mail">Электронная почта</label>
+							<input type="text" name="mail" placeholder="email" />
+						</li>
+						<li class="form__item">
+							<label for="company">пароль</label>
+							<input type="text" placeholder="пароль*">
+						</li>
+						<li class="form__item form__remember">
+							<div>
+								<input type="checkbox" class="custom-checkbox" id="remember" name="remember" value="remember">
+								<label for="remember">Запомнить меня</label>
+							</div>
+							<a href="#">Забыли пароль?</a>
+						</li>
+						<li class="form__btn">
+							<button type="button" class="btn border form__link open-reg">демо аккаунт</button>
+							<input type="submit" form="form" class="btn btn_orange border" value="войти">
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+		</div>
+		<di class="modal__bg">
+			<img src="img/modal/bg-2.svg" alt="Фоновая картинка">
+		</di>
+	</div>
+	<div class="modal__wrapper demo hidden">
+		<div class="modal__content">
+			<div class="modal__agreement">
+				<div class="modal__img">
+					<img src="img/modal/logo.svg" alt="Логотип Pako">
+				</div>
+				<ul class="modal__list">
+					<li class="modal__item">Наши специалисты проведут предварительный анализ присутствия Вашей
+						компании в геосерсисах и
+						подготовят отчет (for free, естественно).
+					</li>
+					<li class="modal__item">Вы познакомитесь с платформой pako изнутри и узнаете о всех
+						возможностях
+						для Вашего бизнеса.
+					</li>
+				</ul>
+			</div>
+			<form action="" class="form">
+				<fieldset class="form__wrapper">
+					<legend class="form__subtitle border">ЗАПОЛНИТЕ ФОРМУ</legend>
+					<ul class="form__list">
+						<li class="form__item">
+							<label for="company">компания</label>
+							<input type="text" placeholder="компания">
+						</li>
+						<li class="form__item">
+							<label for="phone">Телефон</label>
+							<input class="phone" name="phone" type="text" placeholder="Телефон" />
+						</li>
+						<li class="form__item">
+							<label for="mail">Электронная почта</label>
+							<input type="text" name="mail" placeholder="email" />
+						</li>
+						<li class="form__btn">
+							<input type="submit" form="form" class="btn btn_orange border" value="Отправить">
+						</li>
+						<li class="form__btn">
+							<button type="button" class="back">Уже есть аккаунт? Войти</button>
+						</li>
+					</ul>
+				</fieldset>
+				<div class="agreement">
+					Нажимая кнопку, я принимаю соглашение об <a href="#">обработке персональных данных</a>
+				</div>
+			</form>
+		</div>
+		<di class="modal__bg">
+			<img src="img/modal/bg.svg" alt="Фоновая картинка">
+		</di>
+	</div>
+</div>
 			<div id="modal-tariffs" class="modal modal-tariffs">
-				<div class="modal__wrapper">
-					<div class="modal__content">
-						<div class="modal__agreement">
-							<div class="modal__img">
-								<img src="img/modal/logo.svg" alt="Логотип Pako">
-							</div>
-							<ul class="modal__list">
-								<li class="modal__item">
-									Наши специалисты проведут предварительный анализ присутствия Вашей компании в геосерсисах и
-									подготовят отчет (for free, естественно).
-								</li>
-								<li class="modal__item">
-									Для расчета стоимости услуги для Вашего бизнеса заполните форму и в ближайшее время наши
-									специалисты свяжутся с Вами!
-								</li>
-							</ul>
-						</div>
-						<form action="" class="form">
-							<fieldset class="form__wrapper">
-								<legend class="form__subtitle border">ТАРИФ <span>ПРЕМИУМ</span></legend>
-								<ul class="form__list">
-									<li class="form__item">
-										<label for="company">контактное лицо*</label>
-										<input type="text" placeholder="контактное лицо*">
-									</li>
-									<li class="form__item">
-										<label for="company">компания*</label>
-										<input type="text" placeholder="компания*">
-									</li>
-									<li class="form__item">
-										<label for="phone">телефон*</label>
-										<input class="phone" name="phone" type="text" placeholder="телефон*" />
-									</li>
-									<li class="form__item">
-										<label for="mail">email*</label>
-										<input type="text" name="mail" placeholder="email" />
-									</li>
-									<li class="form__item">
-										<label for="company">ссылка на сайт Вашей компании*</label>
-										<input type="text" placeholder="ссылка на сайт Вашей компании*">
-									</li>
-									<li class="form__item">
-										<label for="company">количество филиалов*</label>
-										<input type="number" placeholder="количество филиалов*">
-									</li>
-									<li class="form__btn">
-										<input type="submit" form="form" class="btn btn_orange border" value="Отправить">
-									</li>
-								</ul>
-							</fieldset>
-							<div class="agreement">
-								Нажимая кнопку, я принимаю соглашение об <a href="#">обработке персональных данных</a>
-							</div>
-						</form>
-					</div>
-					<di class="modal__bg">
-						<img src="img/modal/bg.svg" alt="Фоновая картинка">
-					</di>
+	<div class="modal__wrapper">
+		<div class="modal__content">
+			<div class="modal__agreement">
+				<div class="modal__img">
+					<img src="img/modal/logo-price.svg" alt="Логотип Pako">
 				</div>
+				<ul class="modal__list">
+					<li class="modal__item">
+						Наши специалисты проведут предварительный анализ присутствия Вашей компании в геосерсисах и
+						подготовят отчет (for free, естественно).
+					</li>
+					<li class="modal__item">
+						Для расчета стоимости услуги для Вашего бизнеса заполните форму и в ближайшее время наши
+						специалисты свяжутся с Вами!
+					</li>
+				</ul>
 			</div>
+			<form action="" class="form">
+				<fieldset class="form__wrapper">
+					<legend class="form__subtitle border">ТАРИФ <span>ПРЕМИУМ</span></legend>
+					<ul class="form__list">
+						<li class="form__item">
+							<label for="company">контактное лицо*</label>
+							<input type="text" placeholder="контактное лицо*">
+						</li>
+						<li class="form__item">
+							<label for="company">компания*</label>
+							<input type="text" placeholder="компания*">
+						</li>
+						<li class="form__item">
+							<label for="phone">телефон*</label>
+							<input class="phone" name="phone" type="text" placeholder="телефон*" />
+						</li>
+						<li class="form__item">
+							<label for="mail">email*</label>
+							<input type="text" name="mail" placeholder="email" />
+						</li>
+						<li class="form__item">
+							<label for="company">ссылка на сайт Вашей компании*</label>
+							<input type="text" placeholder="ссылка на сайт Вашей компании*">
+						</li>
+						<li class="form__item">
+							<label for="company">количество филиалов*</label>
+							<input type="number" placeholder="количество филиалов*">
+						</li>
+						<li class="form__btn">
+							<input type="submit" form="form" class="btn btn_orange border" value="Отправить">
+						</li>
+					</ul>
+				</fieldset>
+				<div class="agreement">
+					Нажимая кнопку, я принимаю соглашение об <a href="#">обработке персональных данных</a>
+				</div>
+			</form>
+		</div>
+		<di class="modal__bg">
+			<img src="img/modal/bg.svg" alt="Фоновая картинка">
+		</di>
+	</div>
+</div>
 		</main>
 		<footer class="footer">
 	<div class="footer__container">
 		<div class="footer__wrapper">
 			<div class="footer__info">
-				<a href="#" class="footer__img" aria-label="Возврашение в начало страницы">
+				<a href="index.html" class="footer__img" aria-label="Возврашение в начало страницы">
 					<img src="img/logo.svg" alt="Логотип Pako">
 				</a>
 				<div class="footer__text fw-400">
@@ -570,7 +575,7 @@
 					<li class="footer__item"><a href="#selling">Почему это важно</a></li>
 					<li class="footer__item"><a href="#tariffs">Тарифы</a></li>
 					<li class="footer__item"><a href="#about">О нас</a></li>
-					<li class="footer__item"><a href="#">Блог</a></li>
+					<li class="footer__item"><a href="blog.html">Блог</a></li>
 				</ul>
 			</nav>
 			<div class="footer__contacts">
@@ -601,12 +606,12 @@
 	</div>
 </footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20230204225001"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20230204225001"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js?_v=20230204225001"></script>
-<!-- <script src="js/modules/flsWebp.js?_v=20230204225001"></script> -->
-<script src="js/components/menu.js?_v=20230204225001"></script>
-<script src="js/components/jquery.maskedinput.min.js?_v=20230204225001"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js?_v=20230206214419"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20230206214419"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js?_v=20230206214419"></script>
+<!-- <script src="js/modules/flsWebp.js?_v=20230206214419"></script> -->
+<script src="js/components/menu.js?_v=20230206214419"></script>
+<script src="js/components/jquery.maskedinput.min.js?_v=20230206214419"></script>
 <script>
 	$(function () {
 		$("#tabs").tabs();
@@ -617,7 +622,7 @@
 		$(".phone").mask("+7(999) 999-9999");
 	});
 </script>
-<script src="js/components/modal-btn.js?_v=20230204225001"></script>
+<script src="js/components/modal-btn.js?_v=20230206214419"></script>
 </body>
 
 </html>
