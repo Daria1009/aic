@@ -847,7 +847,9 @@ section {
   right: 180px;
 }
 
-.services .slider2__btn span {
+.services .slider2__btn span,
+.services .slider2__btn b,
+.services .slider2__btn strong {
   position: relative;
   z-index: 2;
 }
